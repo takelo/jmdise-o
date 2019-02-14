@@ -1,0 +1,138 @@
+header{
+  z-index: 25;
+  background: url(../img/fondo-bienvenida.jpg);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, .5);
+}
+
+nav.navbar{
+  text-align: center;
+}
+
+nav.navbar{
+  text-align: center;
+}
+
+nav.navbar li{
+  transition: all .6s ease;
+  margin: 0.1rem;
+}
+
+nav.navbar li:hover{
+  background-color: #568dc9;
+}
+nav.navbar li.active{
+  background-color: #568dc9;
+  border: 1px #71ff5d solid;
+}
+
+nav.bg-dark{
+    background-color: rgba(0,0,0,0.60)!important;
+}
+
+div.informacion-portada{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+div.informacion-portada .titulo h2{
+ color:white;
+}
+div.informacion-portada .texto-bienvenida p{
+ color:white;
+}
+
+div.informacion-portada a.btn-outline-primary{
+ width: 80%;
+ margin: 0 auto;
+}
+
+section.quien-soy{
+  background: #384b7e;
+  color:white;
+  text-align: center;
+}
+
+section.quien-soy img{
+  display: block;
+  max-width: 40%;
+  margin: 0 auto;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+
+  @media only screen and (min-width:960px) {
+    section.quien-soy img{
+      max-width: 25%;
+    }
+  }
+section.servicios h2{
+  margin-bottom: 3rem;
+}
+section.servicios{
+  text-align: center;
+}
+section.servicios i{
+  color: #f05f40;
+  font-size: 5rem;
+}
+/* div.barra, div.barra nav{
+  background-color: yellow!important;
+} */
+section.portafolio{
+  background: #424141;
+  color:#fff;
+}
+
+section.portafolio h2{
+  color:#fff;
+  margin-bottom: 3rem;
+}
+
+section.portafolio img{
+  margin-bottom: 2rem;
+}
+
+section.contacto{
+  background: #384b7e;
+  color: #fff;
+}
+
+section.contacto a{
+  color: #2ea78e;
+  transition: all .6s ease;
+}
+
+section.contacto a:hover{
+  text-decoration: none;
+  color: green;
+}
+
+section.contacto h2{
+  margin-bottom: 3rem;
+
+}
+
+section.contacto ul{
+  list-style: none;
+}
+section.contacto ul li{
+  margin: 2rem 0;
+}
+section.contacto ul li i{
+  color: #f05f40;
+  font-size: 2rem;
+  vertical-align: sub;
+}
+
+footer{
+  color:#fff;
+  background: #222222;
+}
