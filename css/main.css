@@ -113,6 +113,7 @@ section.portfolio h2{
 }
 ul.lista-portfolio{
   list-style: none;
+  padding: 0;
 }
 ul.lista-portfolio li{
   padding: 10px;
