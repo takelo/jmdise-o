@@ -48,4 +48,15 @@ $(document).ready(function() {
   // $("div.informacion p").fadeIn(3300);
 
 
+// boton flotante
+//menu fijo y cambio de tamaño
+ $(window).scroll(function(){
+   var scroll = $(window).scrollTop();
+   if(scroll > 300){
+       $(".flotante").fadeIn(1000);
+     }else{
+         $(".flotante").fadeOut(1000);
+     }
+ });
+
 });//lave document ready
