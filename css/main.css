@@ -18,14 +18,17 @@ nav.navbar{
 nav.navbar li{
   transition: all .6s ease;
   margin: 0.1rem;
+  padding: 0 10px;
+  clip-path: polygon(0 0,80% 0, 100% 100%, 20% 100%, 0 0);
+
 }
 
 nav.navbar li:hover{
-  background-color: #568dc9;
+  background-color: #568dc9!important;
 }
 nav.navbar li.active{
-  background-color: #568dc9;
-  border: 1px #71ff5d solid;
+  background-color: #b31717;
+  /* border: 1px #71ff5d solid; */
 }
 
 nav.bg-dark{
@@ -42,6 +45,13 @@ div.informacion-portada{
 
 div.informacion-portada .titulo h2{
  color:white;
+ font-size: 2rem;
+}
+
+@media only screen and (min-width:960px) {
+  div.informacion-portada .titulo h2{
+    font-size: 5rem;
+  }
 }
 div.informacion-portada .texto-bienvenida p{
  color:white;
@@ -59,13 +69,18 @@ section.quien-soy{
 }
 
 section.quien-soy img{
+  transition:all .5s ease-in-out;
   display: block;
   max-width: 40%;
   margin: 0 auto;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  filter: grayscale(100%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
+section.quien-soy img:hover{
+  transform: rotate(360deg);
+  filter: grayscale(0);
+}
 
 
   @media only screen and (min-width:960px) {
@@ -73,6 +88,10 @@ section.quien-soy img{
       max-width: 25%;
     }
   }
+
+section.servicios{
+  padding: 20vh 0;
+}
 section.servicios h2{
   margin-bottom: 3rem;
 }
@@ -83,10 +102,73 @@ section.servicios i{
   color: #f05f40;
   font-size: 5rem;
 }
-/* div.barra, div.barra nav{
-  background-color: yellow!important;
-} */
-section.portafolio{
+
+
+/* portafolio */
+section.portfolio{
+  padding: 10vh 0;
+}
+section.portfolio h2{
+  text-align: center;
+}
+ul.lista-portfolio{
+  list-style: none;
+}
+ul.lista-portfolio li{
+  padding: 10px;
+  float: left;
+}
+@media only screen and (min-width:480px) {
+  ul.lista-portfolio li{
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  ul.lista-portfolio li{
+    width: 33.3%;
+  }
+}
+
+div.sitio_web{
+  position: relative;
+  overflow: hidden;
+}
+
+div.sitio_web img{
+  width: 100%;
+  filter: grey;
+  filter:grayscale(1);
+  transition: all .5s ease-in-out;
+  border: 4px dashed black;
+}
+
+div.sitio_web img:hover{
+  transform:scale(1.1);
+  filter:grayscale(0);
+}
+
+div.sitio_web p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: #8ececd;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: all .5s ease-in-out;
+}
+/* cuando hago over en sitio_web afecto a p  */
+div.sitio_web:hover p{
+bottom: -80px;
+opacity: 0;
+}
+/* section.portafolio{
   background: #424141;
   color:#fff;
 }
@@ -98,9 +180,10 @@ section.portafolio h2{
 
 section.portafolio img{
   margin-bottom: 2rem;
-}
+} */
 
 section.contacto{
+  padding: 10vh 0;
   background: #384b7e;
   color: #fff;
 }
@@ -135,4 +218,17 @@ section.contacto ul li i{
 footer{
   color:#fff;
   background: #222222;
+}
+
+/* boton flotante */
+
+a.flotante {
+  /* display: none; */
+  z-index:50;
+  position:fixed;
+  bottom:10vh;
+  left:5vw;
+}
+a.flotante img{
+  width: 5vw;
 }
