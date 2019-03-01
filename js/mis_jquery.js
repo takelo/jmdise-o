@@ -25,7 +25,6 @@ $(document).ready(function() {
   $(".char3").fadeIn(400);
   $(".char4").fadeIn(500);
   $(".char5").fadeIn(600);
-  $(".char6").fadeIn(650);
   $(".char7").fadeIn(700);
   $(".char8").fadeIn(800);
   $(".char9").fadeIn(900);

@@ -37,18 +37,18 @@
 @keyframes wrench_419 {
   0% { transform:rotate(-12deg) }
   6.95652% { transform:rotate(12deg) }
-  8.69565% { transform:rotate(24deg) }
-  15.65217% { transform:rotate(-12deg) }
-  17.39131% { transform:rotate(-12deg) }
-  24.34782% { transform:rotate(24deg) }
-  26.08696% { transform:rotate(24deg) }
-  33.04348% { transform:rotate(-12deg) }
-  34.78261% { transform:rotate(-12deg) }
-  41.73913% { transform:rotate(24deg) }
-  43.47826% { transform:rotate(24deg) }
-  50.43478% { transform:rotate(-12deg) }
-  52.17391% { transform:rotate(-12deg) }
-  59.13044% { transform:rotate(24deg) }
+  8.69565% { transform:rotate(0deg) }
+  15.65217% { transform:rotate(-24deg) }
+  17.39131% { transform:rotate(-24deg) }
+  24.34782% { transform:rotate(0deg) }
+  26.08696% { transform:rotate(0deg) }
+  33.04348% { transform:rotate(-24deg) }
+  34.78261% { transform:rotate(-24deg) }
+  41.73913% { transform:rotate(0deg) }
+  43.47826% { transform:rotate(0deg) }
+  50.43478% { transform:rotate(-24deg) }
+  52.17391% { transform:rotate(-24deg) }
+  59.13044% { transform:rotate(0deg) }
   65.21739% { transform:rotate(0deg) }
   100% { transform:rotate(0deg) }
 }
