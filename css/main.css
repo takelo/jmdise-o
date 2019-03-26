@@ -58,6 +58,7 @@ div.informacion-portada .texto-bienvenida p{
 }
 
 div.informacion-portada a.btn-outline-primary{
+  color:white;
  width: 80%;
  margin: 0 auto;
 }
