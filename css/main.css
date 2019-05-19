@@ -58,6 +58,7 @@ div.informacion-portada .texto-bienvenida p{
 }
 
 div.informacion-portada a.btn-outline-primary{
+  color:white!important;
  width: 80%;
  margin: 0 auto;
 }
@@ -113,6 +114,7 @@ section.portfolio h2{
 }
 ul.lista-portfolio{
   list-style: none;
+  padding: 0;
 }
 ul.lista-portfolio li{
   padding: 10px;
@@ -223,12 +225,20 @@ footer{
 /* boton flotante */
 
 a.flotante {
-  /* display: none; */
+  display: none;
   z-index:50;
   position:fixed;
   bottom:10vh;
   left:5vw;
 }
 a.flotante img{
-  width: 5vw;
+  width: 100px;
+}
+
+.char1, .char2, .char3, .char4, .char5,
+.char6, .char7, .char8, .char9, .char10,
+.char11, .char12, .char13, .char14, .char15,
+.char16, .char17, .char18, .char19, .char20,
+.char21, .char22, .char23, .char24, .char25, .char26{
+  display:none;
 }
