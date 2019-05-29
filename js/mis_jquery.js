@@ -1,4 +1,14 @@
 $(document).ready(function() {
+
+
+  // menu movil
+  $(".hamburger").click(function(){
+    $(".hamburger").toggleClass('open');
+    $(".hamburger").toggleClass("pad-top-10");
+    $(".barra").toggleClass('open');
+    $(".contenedor_menu").toggle();
+    // $(".barra").toggleClass('transparente');
+ });
   // scroll lento
   $('a.ancla').click(function(e){
     e.preventDefault();
