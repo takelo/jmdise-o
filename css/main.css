@@ -222,11 +222,18 @@ a.flotante img{
 /* Barra navegacion */
   /* la medida de la barra es 10vh del logo + 5vh de padding en movil = 20vh
                               5vh del logo + 5 vh de padding en pc = 15vh*/
+
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+}
 div.barra{
   z-index: 50;
   background-color: rgba(0,0,0,0.60)!important;
   /* border-bottom: 1px solid black; */
-
   transition: all 2s ease;
 }
 
