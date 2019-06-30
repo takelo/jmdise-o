@@ -483,3 +483,9 @@ nav.navbar li.active{
 nav.bg-dark{
     background-color: rgba(0,0,0,0.60)!important;
 }
+
+
+.mega iframe{
+  width: 100%;
+  height: 400px;
+}
