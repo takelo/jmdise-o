@@ -11,6 +11,7 @@
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-pagedeck">
   <link href="gwdgooglead_style.css" rel="stylesheet" data-version="5" data-exports-type="gwd-google-ad">
   <link href="gwdimage_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-image">
+  <link href="gwdtaparea_style.css" rel="stylesheet" data-version="6" data-exports-type="gwd-taparea">
   <link href="desarrolladorx_motion_paths.css" rel="stylesheet" data-gwd-motion-path-style-sheet="">
   <style type="text/css" id="gwd-lightbox-style">
     .gwd-lightbox {
@@ -195,6 +196,64 @@
     #page1.gwd-play-animation .gwd-gen-ew60gwdanimation {
       animation: gwd-gen-ew60gwdanimation_gwd-keyframes 5.5s linear 0s 1 normal forwards running;
     }
+    .gwd-image-j9nm {
+      position: absolute;
+      left: 22.97%;
+      top: 63.53%;
+      width: 54.2%;
+      height: 25.36%;
+      opacity: 0;
+    }
+    @keyframes gwd-gen-143pgwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: linear;
+      }
+      61.1111% {
+        opacity: 0;
+        animation-timing-function: step-end;
+      }
+      66.6667% {
+        opacity: 1;
+        animation-timing-function: step-end;
+      }
+      72.2222% {
+        opacity: 0;
+        animation-timing-function: step-end;
+      }
+      77.7778% {
+        opacity: 1;
+        animation-timing-function: step-end;
+      }
+      83.3333% {
+        opacity: 0;
+        animation-timing-function: step-end;
+      }
+      88.8889% {
+        opacity: 1;
+        animation-timing-function: step-end;
+      }
+      94.4444% {
+        opacity: 0;
+        animation-timing-function: step-end;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-143pgwdanimation {
+      animation: gwd-gen-143pgwdanimation_gwd-keyframes 9s linear 0s 1 normal forwards running;
+    }
+    .gwd-taparea-1p8n {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: translate3d(-27px, -21px, 90px);
+      width: 57%;
+      height: 21%;
+      left: 26%;
+      top: 69%;
+    }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_min.js" data-version="6" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
@@ -209,33 +268,44 @@
       // GWD Predefined Function
       gwd.actions.timeline.play('page1');
     };
+    gwd.auto_Tap_areaAction = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.gotoAndPlay('page1', 'start');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Código de soporte para la administración de eventos en Google Web Designer
      // Este bloqueo de la secuencia de comandos se genera automáticamente. No lo edite.
     gwd.actions.events.registerEventHandlers = function(event) {
       gwd.actions.events.addHandler('destello', 'click', gwd.auto_DestelloClick, false);
+      gwd.actions.events.addHandler('tap_area', 'action', gwd.auto_Tap_areaAction, false);
       gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('destello', 'click', gwd.auto_DestelloClick, false);
+      gwd.actions.events.removeHandler('tap_area', 'action', gwd.auto_Tap_areaAction, false);
       gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
   </script>
+  <script data-source="gwdtaparea_min.js" data-version="6" data-exports-type="gwd-taparea" src="gwdtaparea_min.js"></script>
   <script type="text/javascript" src="motionpath_runtime.min.1.0.js" gwd-motionpath-version="1.0"></script>
 </head>
 
 <body>
   <gwd-google-ad id="gwd-ad" polite-load="">
-    <gwd-metric-configuration></gwd-metric-configuration>
+    <gwd-metric-configuration>
+      <gwd-metric-event source="tap_area" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
+    </gwd-metric-configuration>
     <gwd-pagedeck class="gwd-page-container" id="pagedeck" data-gwd-offset-top="0px" data-gwd-offset-left="0px">
-      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-109q" data-gwd-width="100%" data-gwd-height="100%" expanded="">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-109q" data-gwd-width="100%" data-gwd-height="100%" expanded="" data-gwd-animation-labels="start,0">
         <div class="gwd-page-content gwd-page-size">
           <gwd-image id="mega-isologo1" source="assets/mega-isologo1.png" scaling="stretch" class="gwd-image-11kr gwd-gen-pzrpgwdanimation" data-gwd-motion-path-key="gwd-motion-path-13gp"></gwd-image>
           <gwd-image id="mega-isologo2" source="assets/mega-isologo2.png" scaling="stretch" class="gwd-image-5xdm gwd-gen-dlafgwdanimation"></gwd-image>
           <gwd-image id="destello" source="assets/destello.jpg" scaling="stretch" class="gwd-image-1tbd gwd-gen-ew60gwdanimation"></gwd-image>
+          <gwd-image id="playagain" source="assets/playagain.png" scaling="stretch" class="gwd-image-j9nm gwd-gen-143pgwdanimation"></gwd-image>
+          <gwd-taparea id="tap_area" class="gwd-taparea-1p8n"></gwd-taparea>
         </div>
       </gwd-page>
     </gwd-pagedeck>
