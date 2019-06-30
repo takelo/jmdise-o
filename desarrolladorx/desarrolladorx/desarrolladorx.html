@@ -64,8 +64,9 @@
       width: 85.78%;
       height: 58.5%;
       transform-style: preserve-3d;
-      transform: translate3d(0px, 0px, 0px);
       pointer-events: auto;
+      transform: translate3d(0px, 0px, 0px);
+      opacity: 0;
     }
     #page1.gwd-play-animation .gwd-gen-pzrpgwdanimation {
       animation: gwd-gen-pzrpgwdanimation_gwd-keyframes 0.4s linear 0s 5 normal forwards running;
@@ -82,7 +83,7 @@
     }
     .gwd-page-109q {
       background-image: none;
-      background-color: rgba(255, 255, 255, 0);
+      background-color: rgb(2, 1, 1);
     }
     @keyframes gwd-gen-dlafgwdanimation_gwd-keyframes {
       0% {
@@ -91,32 +92,26 @@
         width: 305px;
         animation-timing-function: linear;
       }
-      20% {
+      50% {
         transform: translate3d(0px, 0px, 0px) rotateY(0deg);
         height: 53.63%;
         width: 32%;
         animation-timing-function: linear;
       }
-      25% {
+      62.5% {
         transform: translate3d(0px, 87px, 0px) rotateY(96.3382deg);
         height: 53.63%;
         width: 32%;
         animation-timing-function: linear;
       }
-      30% {
-        transform: translate3d(-1px, 173px, 0px) rotateY(-147.274deg);
+      75% {
+        transform: translate3d(-1px, 173px, 0px) rotateY(138.921deg);
         height: 53.63%;
         width: 32%;
         animation-timing-function: linear;
       }
-      35% {
-        transform: translate3d(-1px, 242px, 0px) rotateY(49.3357deg);
-        height: 53.63%;
-        width: 32%;
-        animation-timing-function: linear;
-      }
-      40% {
-        transform: translate3d(-2px, 346px, 0px) rotateY(0deg);
+      87.5% {
+        transform: translate3d(-1px, 242px, 0px) rotateY(-135.175deg);
         height: 53.63%;
         width: 32%;
         animation-timing-function: linear;
@@ -129,7 +124,52 @@
       }
     }
     #page1.gwd-play-animation .gwd-gen-dlafgwdanimation {
-      animation: gwd-gen-dlafgwdanimation_gwd-keyframes 10s linear 0s 1 normal forwards running;
+      animation: gwd-gen-dlafgwdanimation_gwd-keyframes 4s linear 0s 1 normal forwards running;
+    }
+    @keyframes gwd-gen-pzrpgwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: linear;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    .gwd-image-1tbd {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      opacity: 0;
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    }
+    @keyframes gwd-gen-ew60gwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+        animation-timing-function: linear;
+      }
+      90.4762% {
+        opacity: 0;
+        transform: translate3d(0px, 0px, 90px) scale3d(1, 1, 90);
+        animation-timing-function: linear;
+      }
+      95.2381% {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 90px) scale3d(1, 1, 1);
+        animation-timing-function: linear;
+      }
+      100% {
+        opacity: 0;
+        transform: translate3d(0px, 0px, 90px) scale3d(1, 1, 1);
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-ew60gwdanimation {
+      animation: gwd-gen-ew60gwdanimation_gwd-keyframes 4.2s linear 0s 1 normal forwards running;
     }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -140,6 +180,27 @@
   <script data-source="gwdgooglead_min.js" data-version="5" data-exports-type="gwd-google-ad" src="gwdgooglead_min.js"></script>
   <script data-source="gwdimage_min.js" data-version="12" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
   <script type="text/javascript" src="motionpath_runtime.min.1.0.js" gwd-motionpath-version="1.0"></script>
+  <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+  <script type="text/javascript" gwd-events="handlers">
+    gwd.auto_DestelloClick = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.play('page1');
+    };
+  </script>
+  <script type="text/javascript" gwd-events="registration">
+    // Código de soporte para la administración de eventos en Google Web Designer
+     // Este bloqueo de la secuencia de comandos se genera automáticamente. No lo edite.
+    gwd.actions.events.registerEventHandlers = function(event) {
+      gwd.actions.events.addHandler('destello', 'click', gwd.auto_DestelloClick, false);
+      gwd.actions.timeline.captureAnimationEnd(document.body);
+    };
+    gwd.actions.events.deregisterEventHandlers = function(event) {
+      gwd.actions.events.removeHandler('destello', 'click', gwd.auto_DestelloClick, false);
+      gwd.actions.timeline.releaseAnimationEnd(document.body);
+    };
+    document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
+    document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
+  </script>
 </head>
 
 <body>
@@ -150,6 +211,7 @@
         <div class="gwd-page-content gwd-page-size">
           <gwd-image id="mega-isologo1" source="assets/mega-isologo1.png" scaling="stretch" class="gwd-image-11kr gwd-gen-pzrpgwdanimation" data-gwd-motion-path-key="gwd-motion-path-13gp"></gwd-image>
           <gwd-image id="mega-isologo2" source="assets/mega-isologo2.png" scaling="stretch" class="gwd-image-5xdm gwd-gen-dlafgwdanimation"></gwd-image>
+          <gwd-image id="destello" source="assets/destello.jpg" scaling="stretch" class="gwd-image-1tbd gwd-gen-ew60gwdanimation"></gwd-image>
         </div>
       </gwd-page>
     </gwd-pagedeck>

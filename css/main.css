@@ -59,6 +59,10 @@ section.quien-soy img:hover{
   filter: grayscale(0);
 }
 
+section.quien-soy img:hover section.quien-soy{
+  background: #fff;
+}
+
 
   @media only screen and (min-width:960px) {
     section.quien-soy img{
