@@ -11,7 +11,7 @@ div.informacion-portada{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50%;
+  height: 100%;
   text-align: center;
   /* background: red; */
 }
@@ -484,8 +484,11 @@ nav.bg-dark{
     background-color: rgba(0,0,0,0.60)!important;
 }
 
-
+.mega{
+  background: black;
+}
 .mega iframe{
+  border: none;
   width: 100%;
   height: 400px;
 }
