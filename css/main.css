@@ -17,6 +17,7 @@ div.informacion-portada{
 }
 
 div.informacion-portada .titulo h2{
+ font-family: 'Satisfy', cursive;
  color:white;
  font-size: 2rem;
 }
@@ -43,6 +44,7 @@ section.quien-soy{
   background: #384b7e;
   color:white;
   text-align: center;
+  transition:all .5s ease-in-out;
 }
 
 section.quien-soy img{
@@ -83,8 +85,13 @@ section.servicios i{
   color: #f05f40;
   font-size: 5rem;
 }
-
-
+section{
+  font-family: 'Roboto', cursive;
+}
+section h2{
+  font-family: 'Barriecito', cursive;
+  font-size: 4em;
+}
 /* portafolio */
 section.portfolio{
   padding: 10vh 0;
@@ -115,6 +122,8 @@ ul.lista-portfolio li{
 div.sitio_web{
   position: relative;
   overflow: hidden;
+  border: 4px dashed black;
+  
 }
 
 div.sitio_web img{
@@ -122,7 +131,6 @@ div.sitio_web img{
   filter: grey;
   filter:grayscale(1);
   transition: all .5s ease-in-out;
-  border: 4px dashed black;
 }
 
 div.sitio_web img:hover{

@@ -63,11 +63,22 @@ $(document).ready(function() {
 //menu fijo y cambio de tamaño
  $(window).scroll(function(){
    var scroll = $(window).scrollTop();
-   if(scroll > 300){
+   if(scroll > 400){
        $(".flotante").fadeIn(1000);
      }else{
          $(".flotante").fadeOut(1000);
      }
+ });
+
+ $(".quien-soy").waypoint(function(){
+   $(".quien-soy").css('background-color', 'black');
+   $(".quien-soy img").css('transform', 'rotate(360deg)');
+   $(".quien-soy img").css('filter', 'grayscale(0)');
+   // $(".resumen-evento li:nth-child(2) p").animateNumber({number:15},1200);
+   // $(".resumen-evento li:nth-child(3) p").animateNumber({number:3},1500);
+   // $(".resumen-evento li:nth-child(4) p").animateNumber({number:9},1500);
+ }, {
+   offset: "60%"
  });
 
 });//lave document ready
