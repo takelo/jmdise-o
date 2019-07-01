@@ -508,3 +508,115 @@ nav.bg-dark{
   width: 100%;
   height: 400px;
 }
+
+
+/* formulario contacto */
+/* Form */
+
+	form {
+		margin: -1em 0 2em 0;
+	}
+
+		form:after {
+			content: '';
+			display: block;
+			clear: both;
+			height: 1px;
+		}
+
+		form .field {
+			position: relative;
+			float: left;
+			margin: 0 0 1.3em 0;
+			vertical-align: top;
+			width: 100%;
+		}
+
+		form .half {
+			width: calc(50% + 1em) !important;
+			padding-left: 2em;
+		}
+
+		form .half.first {
+			width: calc(50% - 1em) !important;
+			padding-left: 0;
+		}
+
+		form :last-child {
+			margin-bottom: 0;
+		}
+
+		form .half:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+
+
+		@media screen and (max-width: 480px) {
+			form .half {
+				width: 100% !important;
+				padding-left: 0;
+			}
+
+			form .half.first {
+				width: 100% !important;
+				padding-left: 0;
+			}
+
+			form .half:nth-last-child(2) {
+				margin: 0 0 1.3em 0;
+			}
+
+		}
+
+	label {
+		display: block;
+		font-size: 0.9em;
+		font-weight: 900;
+		margin: 0 0 1em 0;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		border-bottom: solid 1px #c9c9c9;
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0;
+		text-decoration: none;
+		width: 100%;
+	}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		input[type="tel"]:focus,
+		select:focus,
+		textarea:focus {
+			border-bottom-color: white;
+			box-shadow: inset 0 -1px 0 0 white;
+		}
+
+
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: 3em;
+	}
+
+	textarea {
+		padding: 0;
+		min-height: 3.75em;
+	}
