@@ -63,7 +63,7 @@ $(document).ready(function() {
 //menu fijo y cambio de tamaño
  $(window).scroll(function(){
    var scroll = $(window).scrollTop();
-   if(scroll > 400){
+   if(scroll > 2500){
        $(".flotante").fadeIn(1000);
      }else{
          $(".flotante").fadeOut(1000);

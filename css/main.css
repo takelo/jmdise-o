@@ -82,14 +82,14 @@ section.servicios{
   text-align: center;
 }
 section.servicios i{
-  color: #f05f40;
+  color: #ff1200;
   font-size: 5rem;
 }
 section{
-  font-family: 'Roboto', cursive;
+  font-family: 'Permanent Marker', cursive;
 }
 section h2{
-  font-family: 'Barriecito', cursive;
+  font-family: 'Permanent Marker', cursive;
   font-size: 4em;
 }
 /* portafolio */
@@ -123,7 +123,7 @@ div.sitio_web{
   position: relative;
   overflow: hidden;
   border: 4px dashed black;
-  
+
 }
 
 div.sitio_web img{
@@ -185,7 +185,7 @@ section.contacto a{
 
 section.contacto a:hover{
   text-decoration: none;
-  color: green;
+  color: #e9ff4a;
 }
 
 section.contacto h2{
@@ -200,7 +200,7 @@ section.contacto ul li{
   margin: 2rem 0;
 }
 section.contacto ul li i{
-  color: #f05f40;
+  color: #e9ff4a;
   font-size: 2rem;
   vertical-align: sub;
 }
