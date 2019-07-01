@@ -90,7 +90,11 @@ section{
 }
 section h2{
   font-family: 'Permanent Marker', cursive;
-  font-size: 4em;
+}
+@media only screen and (min-width:660px) {
+  section h2{
+    font-size: 4em;
+  }
 }
 /* portafolio */
 section.portfolio{
