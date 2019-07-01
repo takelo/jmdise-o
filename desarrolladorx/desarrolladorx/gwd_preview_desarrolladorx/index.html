@@ -1390,64 +1390,6 @@ body {
         opacity: 1;
         -moz-animation-timing-function: linear;
     }
-}
-#page1.gwd-play-animation .event-1-animation {
-    animation: gwd-empty-animation 9s linear 0s 1 normal forwards;
-    -webkit-animation: gwd-empty-animation 9s linear 0s 1 normal forwards;
-    -moz-animation: gwd-empty-animation 9s linear 0s 1 normal forwards;
-}
-@keyframes gwd-empty-animation {
-    0% {
-        opacity: 0.001;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-webkit-keyframes gwd-empty-animation {
-    0% {
-        opacity: 0.001;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-moz-keyframes gwd-empty-animation {
-    0% {
-        opacity: 0.001;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-#page1.start .event-1-animation {
-    animation: gwd-empty-animation_start 9s linear 0s 1 normal forwards;
-    -webkit-animation: gwd-empty-animation_start 9s linear 0s 1 normal forwards;
-    -moz-animation: gwd-empty-animation_start 9s linear 0s 1 normal forwards;
-}
-@keyframes gwd-empty-animation_start {
-    0% {
-        opacity: 0.001;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-webkit-keyframes gwd-empty-animation_start {
-    0% {
-        opacity: 0.001;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-moz-keyframes gwd-empty-animation_start {
-    0% {
-        opacity: 0.001;
-    }
-    100% {
-        opacity: 0;
-    }
 }</style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_min.js" data-version="6" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
@@ -1462,22 +1404,16 @@ body {
       // GWD Predefined Function
       gwd.actions.timeline.gotoAndPlay('page1', 'start');
     };
-    gwd.auto_Page1Event_1 = function(event) {
-      // GWD Predefined Function
-      gwd.actions.timeline.gotoAndPlayNTimes('page1', 'start', 100, 'counter');
-    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Código de soporte para la administración de eventos en Google Web Designer
      // Este bloqueo de la secuencia de comandos se genera automáticamente. No lo edite.
     gwd.actions.events.registerEventHandlers = function(event) {
       gwd.actions.events.addHandler('tap_area', 'action', gwd.auto_Tap_areaAction, false);
-      gwd.actions.events.addHandler('page1', 'event-1', gwd.auto_Page1Event_1, false);
       gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('tap_area', 'action', gwd.auto_Tap_areaAction, false);
-      gwd.actions.events.removeHandler('page1', 'event-1', gwd.auto_Page1Event_1, false);
       gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -1495,12 +1431,11 @@ body {
     <gwd-pagedeck class="gwd-page-container" id="pagedeck" data-gwd-offset-top="0px" data-gwd-offset-left="0px">
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-109q" data-gwd-width="100%" data-gwd-height="400px">
         <div class="gwd-page-content gwd-page-size gwd-div-1vxe">
-          <div data-gwd-motion-path-node="x" class="gwd-motion-path-13gp-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-13gp-anim-y"><gwd-image id="mega-isologo1" source="mega-isologo1.png?1561934520079" scaling="stretch" class="gwd-image-11kr gwd-gen-pzrpgwdanimation"></gwd-image></div></div>
-          <gwd-image id="mega-isologo2" source="mega-isologo2.png?1561934520079" scaling="stretch" class="gwd-image-5xdm gwd-gen-dlafgwdanimation"></gwd-image>
-          <gwd-image id="destello" source="destello.jpg?1561934520079" scaling="stretch" class="gwd-image-1tbd gwd-gen-ew60gwdanimation"></gwd-image>
-          <gwd-image id="playagain" source="playagain.png?1561934520079" scaling="stretch" class="gwd-image-j9nm gwd-gen-143pgwdanimation"></gwd-image>
+          <div data-gwd-motion-path-node="x" class="gwd-motion-path-13gp-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-13gp-anim-y"><gwd-image id="mega-isologo1" source="mega-isologo1.png?1561940507143" scaling="stretch" class="gwd-image-11kr gwd-gen-pzrpgwdanimation"></gwd-image></div></div>
+          <gwd-image id="mega-isologo2" source="mega-isologo2.png?1561940507143" scaling="stretch" class="gwd-image-5xdm gwd-gen-dlafgwdanimation"></gwd-image>
+          <gwd-image id="destello" source="destello.jpg?1561940507143" scaling="stretch" class="gwd-image-1tbd gwd-gen-ew60gwdanimation"></gwd-image>
+          <gwd-image id="playagain" source="playagain.png?1561940507143" scaling="stretch" class="gwd-image-j9nm gwd-gen-143pgwdanimation"></gwd-image>
           <gwd-taparea id="tap_area" class="gwd-taparea-1p8n"></gwd-taparea>
-          <div class="gwd-animation-event event-1-animation" data-event-name="event-1" data-event-time="9000"></div>
         </div>
       </gwd-page>
     </gwd-pagedeck>
