@@ -2868,16 +2868,22 @@ body {
       // GWD Predefined Function
       gwd.actions.timeline.gotoAndPlayNTimes('page1', 'start', 7, 'counter');
     };
+    gwd.auto_Page1Animation_end1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.gotoAndPlay('page1', 'start');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Código de soporte para la administración de eventos en Google Web Designer
      // Este bloqueo de la secuencia de comandos se genera automáticamente. No lo edite.
     gwd.actions.events.registerEventHandlers = function(event) {
       gwd.actions.events.addHandler('page1', 'animation-end', gwd.auto_Page1Animation_end, false);
+      gwd.actions.events.addHandler('page1', 'animation-end', gwd.auto_Page1Animation_end1, false);
       gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('page1', 'animation-end', gwd.auto_Page1Animation_end, false);
+      gwd.actions.events.removeHandler('page1', 'animation-end', gwd.auto_Page1Animation_end1, false);
       gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -2891,16 +2897,16 @@ body {
     <gwd-pagedeck class="gwd-page-container" id="pagedeck">
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-jrzo" data-gwd-width="100%" data-gwd-height="426px">
         <div class="gwd-page-content gwd-page-size gwd-div-19hj">
-          <gwd-image id="strangerlogo" source="strangerlogo.png?1562618214811" scaling="stretch" class="gwd-image-18zt gwd-gen-ezvpgwdanimation"></gwd-image>
-          <gwd-image id="M" source="M.png?1562618214811" scaling="stretch" class="gwd-image-145s gwd-gen-14o6gwdanimation"></gwd-image>
-          <gwd-image id="J" source="J.png?1562618214811" scaling="stretch" class="gwd-image-1phc gwd-gen-1v7zgwdanimation"></gwd-image>
-          <div data-gwd-motion-path-node="x" class="gwd-motion-path-1e7j-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-1e7j-anim-y"><gwd-image id="E" source="E.png?1562618214811" scaling="stretch" class="gwd-image-dh29 gwd-gen-4qiwgwdanimation"></gwd-image></div></div>
-          <gwd-image id="D" source="D.png?1562618214811" scaling="stretch" class="gwd-image-tuet gwd-gen-8o8vgwdanimation"></gwd-image>
-          <div data-gwd-motion-path-node="x" class="gwd-motion-path-919j-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-919j-anim-y"><gwd-image id="es" source="es.png?1562618214811" scaling="stretch" class="gwd-image-1d3j gwd-gen-10ligwdanimation"></gwd-image></div></div>
-          <div data-gwd-motion-path-node="x" class="gwd-motion-path-bsjb-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-bsjb-anim-y"><gwd-image id="ar" source="ar.png?1562618214811" scaling="stretch" class="gwd-image-1anu gwd-gen-105pgwdanimation"></gwd-image></div></div>
-          <gwd-image id="rollo" source="rollo.png?1562618214811" scaling="stretch" class="gwd-image-flpz gwd-gen-beg9gwdanimation"></gwd-image>
-          <gwd-image id="we" source="we.png?1562618214811" scaling="stretch" class="gwd-image-10ia gwd-gen-8t6ygwdanimation"></gwd-image>
-          <gwd-image id="B" source="B.png?1562618214811" scaling="stretch" class="gwd-image-1uk3 gwd-gen-qmzrgwdanimation"></gwd-image>
+          <gwd-image id="strangerlogo" source="strangerlogo.png?1562618601214" scaling="stretch" class="gwd-image-18zt gwd-gen-ezvpgwdanimation"></gwd-image>
+          <gwd-image id="M" source="M.png?1562618601214" scaling="stretch" class="gwd-image-145s gwd-gen-14o6gwdanimation"></gwd-image>
+          <gwd-image id="J" source="J.png?1562618601214" scaling="stretch" class="gwd-image-1phc gwd-gen-1v7zgwdanimation"></gwd-image>
+          <div data-gwd-motion-path-node="x" class="gwd-motion-path-1e7j-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-1e7j-anim-y"><gwd-image id="E" source="E.png?1562618601214" scaling="stretch" class="gwd-image-dh29 gwd-gen-4qiwgwdanimation"></gwd-image></div></div>
+          <gwd-image id="D" source="D.png?1562618601214" scaling="stretch" class="gwd-image-tuet gwd-gen-8o8vgwdanimation"></gwd-image>
+          <div data-gwd-motion-path-node="x" class="gwd-motion-path-919j-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-919j-anim-y"><gwd-image id="es" source="es.png?1562618601214" scaling="stretch" class="gwd-image-1d3j gwd-gen-10ligwdanimation"></gwd-image></div></div>
+          <div data-gwd-motion-path-node="x" class="gwd-motion-path-bsjb-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-bsjb-anim-y"><gwd-image id="ar" source="ar.png?1562618601214" scaling="stretch" class="gwd-image-1anu gwd-gen-105pgwdanimation"></gwd-image></div></div>
+          <gwd-image id="rollo" source="rollo.png?1562618601214" scaling="stretch" class="gwd-image-flpz gwd-gen-beg9gwdanimation"></gwd-image>
+          <gwd-image id="we" source="we.png?1562618601214" scaling="stretch" class="gwd-image-10ia gwd-gen-8t6ygwdanimation"></gwd-image>
+          <gwd-image id="B" source="B.png?1562618601214" scaling="stretch" class="gwd-image-1uk3 gwd-gen-qmzrgwdanimation"></gwd-image>
           <div class="gwd-animation-event animation-end-animation" data-event-name="animation-end" data-event-time="9900"></div>
         </div>
       </gwd-page>
