@@ -3,7 +3,7 @@
     "tangentFollowing": false, "sections": [ {
       "controlPoints": ["-148.67px", "-90.67px", "-111.11px", "30.79px", "-73.56px", "152.25px", "-36px", "273.71px"], "startTimeMs": 0, "endTimeMs": 4100, "easing": "linear"
     }
-    ], "positionTol":0.5, "angleTol":1, "optimizationLevel":0
+    ], "positionTol":0.5, "angleTol":1, "optimizationLevel":1
   }
   ;
   animation:gwd-motion-path-bsjb-keys-x 4.1s linear 0s 1 normal forwards running;
