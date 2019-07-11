@@ -17,7 +17,7 @@ div.informacion-portada{
 }
 
 div.informacion-portada .titulo h2{
- font-family: 'Satisfy', cursive;
+ font-family: 'Fredericka the Great', cursive;
  color:white;
  font-size: 2rem;
 }
@@ -177,9 +177,14 @@ section.portafolio img{
 } */
 
 section.contacto{
+  font-family: 'IBM Plex Mono', monospace;
   padding: 10vh 0;
   background: #384b7e;
   color: #fff;
+}
+
+section.contacto h2{
+font-family: 'IBM Plex Mono', monospace;
 }
 
 section.contacto a{
@@ -234,6 +239,24 @@ a.flotante img{
 .char21, .char22, .char23, .char24, .char25, .char26{
   display:none;
 }
+
+.char1,.char5, .char10, .char15, .char20, .char25{
+  color:yellow;
+  /* top: -10px; left: 0px; */
+}
+.char2,.char6, .char11,.char16, .char21, .char26{
+  color:red;
+  /* top: 20px; left: 10px; */
+}
+.char3,.char7, .char12, .char17, .char22{
+  color:green;
+  /* top: -10px; left: 20px; */
+}
+.char4,.char8, .char13, .char18, .char23{
+  color:blue;
+  /* top: 20px; right: 20px; */
+  }
+
 
 /* Barra navegacion */
   /* la medida de la barra es 10vh del logo + 5vh de padding en movil = 20vh
@@ -523,7 +546,7 @@ nav.bg-dark{
 /* Form */
 
 	form {
-		margin: -1em 0 2em 0;
+		margin: 0 0 2em 0;
 	}
 
 		form:after {
