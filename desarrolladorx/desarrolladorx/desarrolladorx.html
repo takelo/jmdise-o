@@ -210,7 +210,23 @@
         opacity: 0;
         animation-timing-function: linear;
       }
-      61.1111% {
+      45.8333% {
+        opacity: 0;
+        animation-timing-function: step-end;
+      }
+      50% {
+        opacity: 1;
+        animation-timing-function: step-end;
+      }
+      54.1667% {
+        opacity: 0;
+        animation-timing-function: step-end;
+      }
+      58.3333% {
+        opacity: 1;
+        animation-timing-function: step-end;
+      }
+      62.5% {
         opacity: 0;
         animation-timing-function: step-end;
       }
@@ -218,23 +234,31 @@
         opacity: 1;
         animation-timing-function: step-end;
       }
-      72.2222% {
+      70.8333% {
         opacity: 0;
         animation-timing-function: step-end;
       }
-      77.7778% {
+      75% {
         opacity: 1;
+        animation-timing-function: step-end;
+      }
+      79.1667% {
+        opacity: 0;
         animation-timing-function: step-end;
       }
       83.3333% {
-        opacity: 0;
-        animation-timing-function: step-end;
-      }
-      88.8889% {
         opacity: 1;
         animation-timing-function: step-end;
       }
-      94.4444% {
+      87.5% {
+        opacity: 0;
+        animation-timing-function: step-end;
+      }
+      91.6667% {
+        opacity: 1;
+        animation-timing-function: step-end;
+      }
+      95.8333% {
         opacity: 0;
         animation-timing-function: step-end;
       }
@@ -244,7 +268,7 @@
       }
     }
     #page1.gwd-play-animation .gwd-gen-143pgwdanimation {
-      animation: gwd-gen-143pgwdanimation_gwd-keyframes 9s linear 0s 1 normal forwards running;
+      animation: gwd-gen-143pgwdanimation_gwd-keyframes 12s linear 0s 1 normal forwards running;
     }
     .gwd-taparea-1p8n {
       position: absolute;
@@ -272,16 +296,22 @@
       // GWD Predefined Function
       gwd.actions.timeline.gotoAndPlay('page1', 'start');
     };
+    gwd.auto_Page1Event_11 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.gotoAndPlay('page1', 'start');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Código de soporte para la administración de eventos en Google Web Designer
      // Este bloqueo de la secuencia de comandos se genera automáticamente. No lo edite.
     gwd.actions.events.registerEventHandlers = function(event) {
       gwd.actions.events.addHandler('tap_area', 'action', gwd.auto_Tap_areaAction, false);
+      gwd.actions.events.addHandler('page1', 'event-1', gwd.auto_Page1Event_11, false);
       gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('tap_area', 'action', gwd.auto_Tap_areaAction, false);
+      gwd.actions.events.removeHandler('page1', 'event-1', gwd.auto_Page1Event_11, false);
       gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -297,13 +327,14 @@
       <gwd-metric-event source="tap_area" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
     </gwd-metric-configuration>
     <gwd-pagedeck class="gwd-page-container" id="pagedeck" data-gwd-offset-top="0px" data-gwd-offset-left="0px">
-      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-109q" data-gwd-width="100%" data-gwd-height="400px" data-gwd-animation-labels="start,0">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-109q" data-gwd-width="100%" data-gwd-height="400px" data-gwd-animation-labels="start,0;et2,8500">
         <div class="gwd-page-content gwd-page-size gwd-div-1vxe">
           <gwd-image id="mega-isologo1" source="assets/mega-isologo1.png" scaling="stretch" class="gwd-image-11kr gwd-gen-pzrpgwdanimation" data-gwd-motion-path-key="gwd-motion-path-13gp"></gwd-image>
           <gwd-image id="mega-isologo2" source="assets/mega-isologo2.png" scaling="stretch" class="gwd-image-5xdm gwd-gen-dlafgwdanimation"></gwd-image>
           <gwd-image id="destello" source="assets/destello.jpg" scaling="stretch" class="gwd-image-1tbd gwd-gen-ew60gwdanimation"></gwd-image>
           <gwd-image id="playagain" source="assets/playagain.png" scaling="stretch" class="gwd-image-j9nm gwd-gen-143pgwdanimation"></gwd-image>
           <gwd-taparea id="tap_area" class="gwd-taparea-1p8n"></gwd-taparea>
+          <div class="gwd-animation-event event-1-animation" data-event-name="event-1" data-event-time="12000"></div>
         </div>
       </gwd-page>
     </gwd-pagedeck>
