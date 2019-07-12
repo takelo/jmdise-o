@@ -241,7 +241,7 @@ a.flotante img{
 }
 
 .char1,.char5, .char10, .char15, .char20, .char25{
-  color:yellow;
+  color:orange;
   /* top: -10px; left: 0px; */
 }
 .char2,.char6, .char11,.char16, .char21, .char26{
