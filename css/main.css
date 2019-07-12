@@ -241,7 +241,7 @@ a.flotante img{
 }
 
 .char1,.char5, .char10, .char15, .char20, .char25{
-  color:yellow;
+  color:purple;
   /* top: -10px; left: 0px; */
 }
 .char2,.char6, .char11,.char16, .char21, .char26{
@@ -253,7 +253,7 @@ a.flotante img{
   /* top: -10px; left: 20px; */
 }
 .char4,.char8, .char18, .char23{
-  color:purple;
+  color:blue;
   /* top: 20px; right: 20px; */
   }
 
