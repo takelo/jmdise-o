@@ -248,13 +248,24 @@ a.flotante img{
   color:red;
   /* top: 20px; left: 10px; */
 }
-.char3,.char7, .char12, .char17, .char22{
+.char3,.char7, .char17, .char22{
   color:green;
   /* top: -10px; left: 20px; */
 }
-.char4,.char8, .char13, .char18, .char23{
-  color:blue;
+.char4,.char8, .char18, .char23{
+  color:purple;
   /* top: 20px; right: 20px; */
+  }
+
+  .char12,.char13, .char14{
+    color:blue;
+    /* top: -10px; left: 20px; */
+  }
+
+  .char28,.char29, .char30{
+    color:black;
+    /* font-weight: bold; */
+    /* top: -10px; left: 20px; */
   }
 
 
