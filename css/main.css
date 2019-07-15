@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "ARCADE";
+  src: url(../fonts/ARCADECLASSIC.TTF);
+}
+
 header{
   z-index: 25;
   background: url(../img/fondo-bienvenida.jpg);
@@ -16,8 +21,9 @@ div.informacion-portada{
   /* background: red; */
 }
 
+
 div.informacion-portada .titulo h2{
- font-family: 'Fredericka the Great', cursive;
+ font-family: "ARCADE", cursive;
  color:white;
  font-size: 2rem;
 }
