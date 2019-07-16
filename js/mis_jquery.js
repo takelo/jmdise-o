@@ -56,6 +56,7 @@ $(document).ready(function() {
   $(".char24").fadeIn(2400);
   $(".char25").fadeIn(2500);
   $(".char26").fadeIn(2600);
+  $(".char27").fadeIn(2600);
   $(".char28").fadeIn(2650);
   $(".char29").fadeIn(2700);
   $(".char30").fadeIn(2750);
