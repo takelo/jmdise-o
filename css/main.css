@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "ARCADE";
+  font-family: "computer";
   src: url(../fonts/Computerfont.ttf);
 }
 
@@ -23,7 +23,7 @@ div.informacion-portada{
 
 
 div.informacion-portada .titulo h2{
- font-family: "ARCADE", cursive;
+ font-family: "computer", cursive;
  color:white;
  font-size: 2rem;
 }
