@@ -18,6 +18,8 @@ div.informacion-portada{
   justify-content: center;
   height: 100%;
   text-align: left;
+  width: 800%;
+  margin: 0 auto;
   /* background: red; */
 }
 
