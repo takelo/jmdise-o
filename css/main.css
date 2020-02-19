@@ -17,23 +17,37 @@ div.informacion-portada{
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  text-align: center;
+  text-align: left;
   /* background: red; */
 }
 
 
-div.informacion-portada .titulo h2{
+div.informacion-portada .titulo p{
  font-family: "computer", cursive;
  color:white;
- font-size: 2rem;
+ font-size: 1rem;
+}
+
+/* ///over here */
+div.informacion-portada .titulo p span.simbolo{
+ color:#d8d5dc;
+}
+div.informacion-portada .titulo p span.nombre_etiqueta{
+ color:#ff5722;
+}
+div.informacion-portada .titulo p span.texto{
+ color:green;
+ /* text-transform: uppercase; */
 }
 
 @media only screen and (min-width:960px) {
   div.informacion-portada{
     height: 100%;
+    width: 60%;
+    margin: 0 auto;
   }
-  div.informacion-portada .titulo h2{
-    font-size: 5rem;
+  div.informacion-portada .titulo p{
+    font-size: 2.2rem;
   }
 }
 div.informacion-portada .texto-bienvenida p{
@@ -242,38 +256,41 @@ a.flotante img{
 .char6, .char7, .char8, .char9, .char10,
 .char11, .char12, .char13, .char14, .char15,
 .char16, .char17, .char18, .char19, .char20,
-.char21, .char22, .char23, .char24, .char25, .char26,
-.char27, .char28, .char29, .char30{
+.char21, .char22, .char23, .char24, .char25,
+.char26, .char27, .char28, .char29, .char30,
+.char31, .char32, .char33, .char34, .char35,
+.char36, .char37, .char38, .char39, .char40,
+.char41, .char42, .char43, .char44, .char45,
+.char46, .char47, .char48, .char49, .char50,
+.char51, .char52, .char53, .char54, .char55,
+.char56, .char57, .char58, .char59, .char60{
   display:none;
 }
 
-.char1,.char5, .char10, .char15, .char20, .char25{
+.char1,.char5, .char10, .char15, .char20, .char25, .char30,.char35, .char40, .char45, .char50, .char55, .char60{
   color:orange;
   /* top: -10px; left: 0px; */
 }
-.char2,.char6, .char11,.char16, .char21, .char26{
+.char2,.char6, .char11,.char16, .char21, .char26, .char31,.char36, .char41, .char46, .char51, .char56{
   color:red;
   /* top: 20px; left: 10px; */
 }
-.char3,.char7, .char17, .char22{
+.char3,.char7, .char12, .char17, .char22,.char27, .char32, .char37, .char42, .char47, .char52, .char57{
   color:green;
   /* top: -10px; left: 20px; */
 }
-.char4,.char8, .char18, .char23{
+.char4,.char8, .char13, .char18, .char23,.char28, .char33, .char38, .char43, .char48, .char53, .char58{
   color:purple;
   /* top: 20px; right: 20px; */
   }
 
-  .char12,.char13, .char14{
+  /* .char12,.char13, .char14{
     color:blue;
-    /* top: -10px; left: 20px; */
   }
 
   .char28,.char29, .char30{
     color:green;
-    font-weight: bold;
-    /* top: -10px; left: 20px; */
-  }
+  } */
 
 
 /* Barra navegacion */

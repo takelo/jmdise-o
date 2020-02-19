@@ -29,7 +29,7 @@ $(document).ready(function() {
   });
 
   // lettering
-  $(".titulo h2").lettering();
+  $(".titulo p span.texto").lettering();
   $(".char1").fadeIn(200);
   $(".char2").fadeIn(300);
   $(".char3").fadeIn(400);
@@ -60,6 +60,38 @@ $(document).ready(function() {
   $(".char28").fadeIn(2650);
   $(".char29").fadeIn(2700);
   $(".char30").fadeIn(2750);
+
+  $(".char31").fadeIn(1100);
+  $(".char32").fadeIn(1200);
+  $(".char33").fadeIn(1300);
+  $(".char34").fadeIn(1400);
+  $(".char35").fadeIn(1500);
+  $(".char36").fadeIn(1600);
+  $(".char37").fadeIn(1700);
+  $(".char38").fadeIn(1800);
+  $(".char39").fadeIn(1900);
+  $(".char40").fadeIn(2000);
+  $(".char41").fadeIn(2100);
+  $(".char42").fadeIn(2200);
+  $(".char43").fadeIn(2300);
+  $(".char44").fadeIn(2400);
+  $(".char45").fadeIn(2500);
+  $(".char46").fadeIn(2600);
+  $(".char47").fadeIn(2600);
+  $(".char48").fadeIn(2650);
+  $(".char49").fadeIn(2700);
+  $(".char50").fadeIn(2750);
+  $(".char51").fadeIn(1100);
+  $(".char52").fadeIn(1200);
+  $(".char53").fadeIn(1300);
+  $(".char54").fadeIn(1400);
+  $(".char55").fadeIn(1500);
+  $(".char56").fadeIn(1600);
+  $(".char57").fadeIn(1700);
+  $(".char58").fadeIn(1500);
+  $(".char59").fadeIn(1600);
+  $(".char60").fadeIn(1700);
+
   // $("div.informacion p").fadeIn(3300);
 
 
