@@ -30,12 +30,13 @@ $(document).ready(function() {
 
   // lettering
   $(".titulo p span.texto").lettering();
-  $(".char1").fadeIn(200);
-  $(".char2").fadeIn(300);
-  $(".char3").fadeIn(400);
-  $(".char4").fadeIn(500);
-  $(".char5").fadeIn(600);
-  $(".char6").fadeIn(650);
+  // $("p.presentacion").lettering();
+  $(".char1").fadeIn(100);
+  $(".char2").fadeIn(200);
+  $(".char3").fadeIn(300);
+  $(".char4").fadeIn(400);
+  $(".char5").fadeIn(500);
+  $(".char6").fadeIn(600);
   $(".char7").fadeIn(700);
   $(".char8").fadeIn(800);
   $(".char9").fadeIn(900);

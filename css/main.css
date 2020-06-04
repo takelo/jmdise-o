@@ -23,6 +23,11 @@ div.informacion-portada{
   /* background: red; */
 }
 
+div.informacion-portada p{
+  /* padding: 1rem;
+  background: blue; */
+}
+
 
 div.informacion-portada .titulo p{
  font-family: "computer", cursive;
