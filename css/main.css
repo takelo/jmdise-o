@@ -18,7 +18,7 @@ div.informacion-portada{
   justify-content: center;
   height: 100%;
   text-align: left;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   /* background: red; */
   /* background: blue; */
@@ -29,7 +29,7 @@ div.informacion-portada{
 div.informacion-portada .titulo p{
  font-family: "computer", cursive;
  color:white;
- font-size: 0.9rem;
+ font-size: 0.8rem;
 }
 
 /* ///over here */
@@ -42,6 +42,17 @@ div.informacion-portada .titulo p span.nombre_etiqueta{
 div.informacion-portada .titulo p span.texto{
  color:green;
  text-transform: uppercase;
+}
+
+@media only screen and (min-width:480px) {
+  div.informacion-portada{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  div.informacion-portada .titulo p{
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width:960px) {
