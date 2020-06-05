@@ -28,70 +28,85 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 
-  // lettering
-  $(".titulo p span.texto").lettering();
-  // $("p.presentacion").lettering();
-  $(".char1").fadeIn(100);
-  $(".char2").fadeIn(200);
-  $(".char3").fadeIn(300);
-  $(".char4").fadeIn(400);
-  $(".char5").fadeIn(500);
-  $(".char6").fadeIn(600);
-  $(".char7").fadeIn(700);
-  $(".char8").fadeIn(800);
-  $(".char9").fadeIn(900);
-  $(".char10").fadeIn(1000);
-  $(".char11").fadeIn(1100);
-  $(".char12").fadeIn(1200);
-  $(".char13").fadeIn(1300);
-  $(".char14").fadeIn(1400);
-  $(".char15").fadeIn(1500);
-  $(".char16").fadeIn(1600);
-  $(".char17").fadeIn(1700);
-  $(".char18").fadeIn(1800);
-  $(".char19").fadeIn(1900);
-  $(".char20").fadeIn(2000);
-  $(".char21").fadeIn(2100);
-  $(".char22").fadeIn(2200);
-  $(".char23").fadeIn(2300);
-  $(".char24").fadeIn(2400);
-  $(".char25").fadeIn(2500);
-  $(".char26").fadeIn(2600);
-  $(".char27").fadeIn(2600);
-  $(".char28").fadeIn(2650);
-  $(".char29").fadeIn(2700);
-  $(".char30").fadeIn(2750);
 
-  $(".char31").fadeIn(1100);
-  $(".char32").fadeIn(1200);
-  $(".char33").fadeIn(1300);
-  $(".char34").fadeIn(1400);
-  $(".char35").fadeIn(1500);
-  $(".char36").fadeIn(1600);
-  $(".char37").fadeIn(1700);
-  $(".char38").fadeIn(1800);
-  $(".char39").fadeIn(1900);
-  $(".char40").fadeIn(2000);
-  $(".char41").fadeIn(2100);
-  $(".char42").fadeIn(2200);
-  $(".char43").fadeIn(2300);
-  $(".char44").fadeIn(2400);
-  $(".char45").fadeIn(2500);
-  $(".char46").fadeIn(2600);
-  $(".char47").fadeIn(2600);
-  $(".char48").fadeIn(2650);
-  $(".char49").fadeIn(2700);
-  $(".char50").fadeIn(2750);
-  $(".char51").fadeIn(1100);
-  $(".char52").fadeIn(1200);
-  $(".char53").fadeIn(1300);
-  $(".char54").fadeIn(1400);
-  $(".char55").fadeIn(1500);
-  $(".char56").fadeIn(1600);
-  $(".char57").fadeIn(1700);
-  $(".char58").fadeIn(1500);
-  $(".char59").fadeIn(1600);
-  $(".char60").fadeIn(1700);
+  // $('.informacion-portada p').hover(
+  //   function() {
+  //       $(this).stop().animate({backgroundColor:'#4E1402'}, 300);
+  //       }, function () {
+  //       $(this).stop().animate({backgroundColor:'#943D20'}, 100);
+  //   });
+
+
+  // lettering
+  // $(".titulo p span.texto").lettering();
+
+  // window.setTimeout( $(".char1").show(100), 5000 ); // 5 seconds
+  // $("p.presentacion").lettering();
+  // for (i = 1; i < 72; i++) {
+  //
+  //   $(".char"+i).show(i*100);
+  // }
+  // $(".char1").show(100);
+  // $(".char2").show(300);
+  // $(".char3").show(600);
+  // $(".char4").show(800);
+  // $(".char5").show(1000);
+  // $(".char6").show(1200);
+  // $(".char7").show(1400);
+  // $(".char8").show(1500);
+  // $(".char9").show(1700);
+  // $(".char10").show(1900);
+  // $(".char11").show(2100);
+  // $(".char12").show(2300);
+  // $(".char13").show(2500);
+  // $(".char14").show(2800);
+  // $(".char15").show(3000);
+  // $(".char16").show(3200);
+  // $(".char17").show(3400);
+  // $(".char18").show(3600);
+  // $(".char19").show(3800);
+  // $(".char20").show(4000);
+  // $(".char21").show(4200);
+  // $(".char22").show(4400);
+  // $(".char23").show(4600);
+  // $(".char24").show(4800);
+  // $(".char25").show(5000);
+  // $(".char26").show(5200);
+  // $(".char27").show(5400);
+  // $(".char28").show(5600);
+  // $(".char29").show(5800);
+  // $(".char30").show(6000);
+  // $(".char31").show(6200);
+  // $(".char32").show(6400);
+  // $(".char33").show(6600);
+  // $(".char34").show(6800);
+  // $(".char35").show(7000);
+  // $(".char36").show(7200);
+  // $(".char37").show(7400);
+  // $(".char38").show(7600);
+  // $(".char39").show(7800);
+  // $(".char40").show(8000);
+  // $(".char41").show(8200);
+  // $(".char42").show(8400);
+  // $(".char43").show(8600);
+  // $(".char44").show(8800);
+  // $(".char45").show(9000);
+  // $(".char46").show(9200);
+  // $(".char47").show(9400);
+  // $(".char48").show(9600);
+  // $(".char49").show(9800);
+  // $(".char50").show(10000);
+  // $(".char51").show(10200);
+  // $(".char52").show(10400);
+  // $(".char53").show(10600);
+  // $(".char54").show(10800);
+  // $(".char55").show(11000);
+  // $(".char56").show(11200);
+  // $(".char57").show(11400);
+  // $(".char58").show(11600);
+  // $(".char59").show(11800);
+  // $(".char60").show(12000);
+  // $(".char61").show(12200);
 
   // $("div.informacion p").fadeIn(3300);
 
@@ -117,5 +132,11 @@ $(document).ready(function() {
  }, {
    offset: "60%"
  });
+
+
+
+
+
+
 
 });//lave document ready
