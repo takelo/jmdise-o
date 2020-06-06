@@ -753,8 +753,8 @@ nav.bg-dark{
   .css-typing p:nth-child(3) {
     width: 22em;
     opacity: 0;
-    -webkit-animation: type2 2s steps(40, end);
-    animation: type2 2s steps(40, end);
+    -webkit-animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;
+    animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;
     -webkit-animation-delay: 6s;
     animation-delay: 6s;
     -webkit-animation-fill-mode: forwards;
@@ -764,8 +764,8 @@ nav.bg-dark{
   .css-typing p:nth-child(4) {
     width: 21em;
     opacity: 0;
-    -webkit-animation: type2 2s steps(40, end);
-    animation: type2 2s steps(40, end);
+    -webkit-animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;
+    animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;
     -webkit-animation-delay: 9s;
     animation-delay: 9s;
     -webkit-animation-fill-mode: forwards;
