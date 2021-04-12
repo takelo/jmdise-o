@@ -1,0 +1,32 @@
+{
+    "es":{
+        "slogan":"Diseño y Desarrollo Web ^^",
+        "inicio":"Inicio",
+        "portfolio":"Portfolio",
+        "quiensoy":"Quien soy?",
+        "contacto":"Contacto",
+        "presentacion-o": "presentacion",
+        "mi-nombre-o": "nombre",
+        "mi-nombre-c": "/nombre",
+        "desarrollador-web": "Desarrollador web",
+        "profesion-o": "profesion",
+        "profesion-c": "/profesion",
+        "presentacion-c": "/presentacion",
+        "contactame": "Contactame!!"
+    },
+    "en":{
+        "slogan":"Web design and development ^^",
+        "inicio":"Home",
+        "portfolio":"Portfolio",
+        "quiensoy":"Meet me",
+        "contacto":"Contact me",
+        "presentacion-o": "presentation",
+        "mi-nombre-o": "name",
+        "mi-nombre-c": "/name",
+        "desarrollador-web": "Web Developer",
+        "profesion-o": "profession",
+        "profesion-c": "/profession",
+        "presentacion-c": "/presentation",
+        "contactame": "Contact!!"
+    }
+}
