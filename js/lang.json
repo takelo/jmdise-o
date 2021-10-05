@@ -12,7 +12,7 @@
         "profesion-o": "profesion",
         "profesion-c": "/profesion",
         "presentacion-c": "/presentacion",
-        "contactame": "Contactame!!"
+        "contactame": "Contactar Ahora."
     },
     "en":{
         "slogan":"Web design and development ^^",
@@ -27,6 +27,6 @@
         "profesion-o": "profession",
         "profesion-c": "/profession",
         "presentacion-c": "/presentation",
-        "contactame": "Contact!!"
+        "contactame": "Contact Now."
     }
 }
