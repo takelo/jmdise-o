@@ -1,32 +1,33 @@
 {
     "es":{
-        "slogan":"Diseño y Desarrollo Web ^^",
+        "slogan":"Diseño y Desarrollo Web a Medida ^^",
         "inicio":"Inicio",
         "portfolio":"Portfolio",
-        "quiensoy":"Quien soy?",
+        "quiensoy":"Sobre mi",
         "contacto":"Contacto",
         "presentacion-o": "presentacion",
-        "mi-nombre-o": "nombre",
-        "mi-nombre-c": "/nombre",
-        "desarrollador-web": "Desarrollador web",
-        "profesion-o": "profesion",
-        "profesion-c": "/profesion",
+        "mi-nombre-o": "titulo",
+        "mi-nombre-c": "/titulo",
+        "desarrollador-web": "Diseño y Desarrollo Web",
+        "desarrollador-web2": "a la medida de tu Empresa",
+        "profesion-o": "servicio",
+        "profesion-c": "/servicio",
         "presentacion-c": "/presentacion",
-        "contactame": "Contactar Ahora."
+        "contactame": "Presiona para contactar YA..."
     },
     "en":{
-        "slogan":"Web design and development ^^",
+        "slogan":"Web design 100%  ^^",
         "inicio":"Home",
         "portfolio":"Portfolio",
         "quiensoy":"Meet me",
         "contacto":"Contact me",
         "presentacion-o": "presentation",
-        "mi-nombre-o": "name",
-        "mi-nombre-c": "/name",
+        "mi-nombre-o": "title",
+        "mi-nombre-c": "/title",
         "desarrollador-web": "Web Developer",
-        "profesion-o": "profession",
-        "profesion-c": "/profession",
+        "profesion-o": "service",
+        "profesion-c": "/service",
         "presentacion-c": "/presentation",
-        "contactame": "Contact Now."
+        "contactame": "Contact Now..."
     }
 }
