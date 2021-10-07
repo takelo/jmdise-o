@@ -27,8 +27,14 @@
   background: none;
   border: none;
   color: var(--verde);
-  font-size: 2.2rem;
+  font-size: 1rem;
   font-family: computer, serif;
+}
+
+@media only screen and (min-width:960px) {
+  .btn.btn-primary{
+    font-size: 2.2rem;
+  }
 }
 
 
@@ -178,9 +184,6 @@ div.hamburger.open .hamburger-inner:before {
 }
 
 @media only screen and (min-width:480px) {
-  .informacion-portada{
-    height: 80vh;
-  }
   div.informacion-portada .titulo p{
     font-size: 1.5rem;
   }
@@ -202,6 +205,92 @@ div.hamburger.open .hamburger-inner:before {
   color:var(--verde)!important;
 }
 /****************/
+
+.servicios{
+  position: relative;
+}
+
+.servicios .contenedor-video video{
+  height: 200vh;
+  width: 100vw;
+  object-fit: cover;
+    /* TODO: silence is  */
+}
+
+
+.servicios .data{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media only screen and (min-width:960px) {
+  .servicios .item{
+    min-height: 250px;
+  }
+}
+
+.servicios .data .logo img{
+  max-height: 150px;
+}
+
+@media only screen and (min-width:960px) {
+  .servicios .data .logo img{
+    max-height: 450px;
+  }
+}
+.servicios .data h2{
+  font-size: 22px;
+  line-height: 33px;
+  /* font-family: 'Permanent Marker', cursive; */
+}
+
+.servicios .data h2 span{
+  font-weight: 900;
+  /* font-family: 'Permanent Marker', cursive; */
+}
+
+.servicios .data h2 span.inf{
+  font-weight: normal;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.servicios .data h2 span.cmp{
+  font-weight: 400;
+  font-size: larger;
+  font-family: computer, serif;
+}
+
+
+.servicios .data h3{
+  font-size: 32px;
+  padding-bottom: 1rem;
+}
+
+.servicios .data i{
+  color: #fff;
+  font-size: 32px;
+}
+section.servicios{
+  text-align: center;
+}
+
+
+
+
+
+
+
+/************************************/
 
 section.quien-soy{
   background: #384b7e;
@@ -235,25 +324,9 @@ section.quien-soy img:hover section.quien-soy{
     }
   }
 
-section.servicios{
-  padding: 20vh 0;
-}
-section.servicios h2{
-  margin-bottom: 3rem;
-}
-section.servicios{
-  text-align: center;
-}
-section.servicios i{
-  color: #ff1200;
-  font-size: 5rem;
-}
-section{
-  font-family: 'Permanent Marker', cursive;
-}
-section h2{
-  font-family: 'Permanent Marker', cursive;
-}
+
+
+
 @media only screen and (min-width:660px) {
   section h2{
     font-size: 4em;
@@ -452,6 +525,7 @@ a.flotante img{
 }
 div.barra{
   z-index: 50;
+  position: relative;
   background-color: rgba(0,0,0,0.60)!important;
   /* border-bottom: 1px solid black; */
   transition: all 2s ease;
@@ -524,20 +598,14 @@ nav.navegacion-principal a.activo{
 
 
 
-@media only screen and (min-width:480px) {
-  div.logo img{
-      height: 10vh;
-  }
-}
+
 @media only screen and (min-width:990px) {
   div.contenedor_menu{
     display: block;
     width: auto;
     margin: 0;
   }
-  div.logo img{
-        /* height: 10vh; */
-  }
+
   nav.navegacion-principal{
     display: block!important;
     width: auto;
@@ -833,7 +901,7 @@ nav.bg-dark{
   }
 
   .css-typing p:nth-child(6) {
-    width: 13em;
+    width: 15em;
     opacity: 0;
     -webkit-animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
     animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
