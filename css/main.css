@@ -170,6 +170,7 @@ div.hamburger.open .hamburger-inner:before {
  font-family: "computer", serif;
  color:white;
  font-size: 0.9rem;
+ transition:all .5s ease-in-out;
 }
 
 .informacion-portada .titulo p span.simbolo{
@@ -184,12 +185,12 @@ div.hamburger.open .hamburger-inner:before {
 }
 
 @media only screen and (min-width:480px) {
-  div.informacion-portada .titulo p{
-    font-size: 1.5rem;
+  .informacion-portada .titulo p{
+    font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:768px) {
   .informacion-portada{
     height: 80vh;
   }
@@ -217,6 +218,11 @@ div.hamburger.open .hamburger-inner:before {
     /* TODO: silence is  */
 }
 
+@media only screen and (min-width:480px) {
+  .servicios .contenedor-video video{
+    height: 100vh;
+  }
+}
 
 .servicios .data{
   position: absolute;
@@ -276,9 +282,16 @@ div.hamburger.open .hamburger-inner:before {
   padding-bottom: 1rem;
 }
 
+@media only screen and (min-width:1400px) {
+  .servicios .data h3{
+    white-space: nowrap;
+  }
+}
+
 .servicios .data i{
   color: #fff;
   font-size: 32px;
+  color: #b34905;
 }
 section.servicios{
   text-align: center;
