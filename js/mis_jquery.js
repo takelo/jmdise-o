@@ -115,6 +115,11 @@ $(document).ready(function() {
 //menu fijo y cambio de tamaño
  $(window).scroll(function(){
    var scroll = $(window).scrollTop();
+   if(scroll > 500){
+    $(".header").addClass('fixed');
+  }else{
+    $(".header").removeClass('fixed');
+  }
    if(scroll > 2500){
        $(".flotante").fadeIn(1000);
      }else{

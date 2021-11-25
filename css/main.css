@@ -47,6 +47,7 @@ header{
   background-position: top center;
   background-size: cover;
   box-shadow: 2px 2px 25px rgba(0, 0, 0, .5);
+  transition: 0.3s all ease-out;
 }
 
 header .logo img{
@@ -213,7 +214,7 @@ div.hamburger.open .hamburger-inner:before {
 
 .servicios .contenedor-video video{
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
     /* TODO: silence is  */
 }
