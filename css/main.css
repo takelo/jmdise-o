@@ -63,11 +63,13 @@ header .contenedor_menu{
 
 header .contenedor_menu{
   background: blue;
+  border: 5px solid white;
 }
 
 @media only screen and (min-width:960px) {
   header .contenedor_menu{
     background: transparent;
+    border:none;
   }
 }
 
@@ -213,13 +215,13 @@ div.hamburger.open .hamburger-inner:before {
 }
 
 .servicios .contenedor-video video{
-  height: 200vh;
+  height: 250vh;
   width: 100%;
   object-fit: cover;
     /* TODO: silence is  */
 }
 
-@media only screen and (min-width:480px) {
+@media only screen and (min-width:900px) {
   .servicios .contenedor-video video{
     height: 100vh;
   }
@@ -247,7 +249,7 @@ div.hamburger.open .hamburger-inner:before {
 }
 
 .servicios .data .logo img{
-  max-height: 150px;
+  max-height: 300px;
 }
 
 @media only screen and (min-width:960px) {
@@ -532,7 +534,7 @@ a.flotante img{
 
 
 .fixed{
-  position: fixed;
+  position: sticky;
   width: 100%;
   top:0;
   left: 0;
@@ -542,7 +544,7 @@ div.barra{
   position: relative;
   background-color: rgba(0,0,0,0.60)!important;
   /* border-bottom: 1px solid black; */
-  transition: all 2s ease;
+  /* transition: all 2s ease; */
 }
 
 div.barra.sombra{
@@ -1017,3 +1019,33 @@ nav.bg-dark{
       border-color: tranparent;
     }
   }
+
+
+  /***********************/
+  @keyframes example {
+    0%   {
+        filter: brightness(1);
+        filter: contrast(1);
+        -webkit-filter: brightness(1);
+        -webkit-filter: contrast(1);
+    }
+    50%  {
+        filter: brightness(1.7);
+        filter: contrast(1.7);
+        -webkit-filter: brightness(1.7);
+        -webkit-filter: contrast(1.7);
+    }
+    100% {
+        filter: brightness(1);
+        filter: contrast(1);
+        -webkit-filter: brightness(1);
+        -webkit-filter: contrast(1);
+    }
+}
+
+.glow {
+
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
