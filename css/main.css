@@ -40,14 +40,14 @@
 
 /* header */
 header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 25;
-  /* background: url(../img/fondo-bienvenida.jpg); */
   background: #000;
-  /* height: 100vh; */
-  background-position: top center;
-  background-size: cover;
   box-shadow: 2px 2px 25px rgba(0, 0, 0, .5);
-  transition: 0.3s all ease-out;
+  transition: 0.5s all;
 }
 
 header .logo img{
@@ -215,7 +215,7 @@ div.hamburger.open .hamburger-inner:before {
 }
 
 .servicios .contenedor-video video{
-  height: 250vh;
+  height: 260vh;
   width: 100%;
   object-fit: cover;
     /* TODO: silence is  */
@@ -249,7 +249,13 @@ div.hamburger.open .hamburger-inner:before {
 }
 
 .servicios .data .logo img{
-  max-height: 300px;
+  max-height: 175px;
+}
+
+@media only screen and (min-width:768px) {
+  .servicios .data .logo img{
+    max-height: 300px;
+  }
 }
 
 @media only screen and (min-width:960px) {
@@ -484,60 +490,15 @@ a.flotante img{
   width: 100px;
 }
 
-.char1, .char2, .char3, .char4, .char5,
-.char6, .char7, .char8, .char9, .char10,
-.char11, .char12, .char13, .char14, .char15,
-.char16, .char17, .char18, .char19, .char20,
-.char21, .char22, .char23, .char24, .char25,
-.char26, .char27, .char28, .char29, .char30,
-.char31, .char32, .char33, .char34, .char35,
-.char36, .char37, .char38, .char39, .char40,
-.char41, .char42, .char43, .char44, .char45,
-.char46, .char47, .char48, .char49, .char50,
-.char51, .char52, .char53, .char54, .char55,
-.char56, .char57, .char58, .char59, .char60,
-.char61, .char62, .char63, .char64, .char65,
-.char66, .char67, .char68, .char69, .char70,
-.char71{
-  display:none;
-}
-
-.char1,.char5, .char10, .char15, .char20, .char25, .char30,.char35, .char40, .char45, .char50, .char55, .char60{
-  /* color:orange; */
-  /* top: -10px; left: 0px; */
-}
-.char2,.char6, .char11,.char16, .char21, .char26, .char31,.char36, .char41, .char46, .char51, .char56{
-  /* color:red; */
-  /* top: 20px; left: 10px; */
-}
-.char3,.char7, .char12, .char17, .char22,.char27, .char32, .char37, .char42, .char47, .char52, .char57{
-  /* color:green; */
-  /* top: -10px; left: 20px; */
-}
-.char4,.char8, .char13, .char18, .char23,.char28, .char33, .char38, .char43, .char48, .char53, .char58{
-  /* color:purple; */
-  /* top: 20px; right: 20px; */
-  }
-
-  /* .char12,.char13, .char14{
-    color:blue;
-  }
-
-  .char28,.char29, .char30{
-    color:green;
-  } */
-
-
-/* Barra navegacion */
-  /* la medida de la barra es 10vh del logo + 5vh de padding en movil = 20vh
-                              5vh del logo + 5 vh de padding en pc = 15vh*/
 
 
 .fixed{
-  position: sticky;
+  position: fixed;
   width: 100%;
   top:0;
   left: 0;
+  -webkit-animation: slideInDown 0.3s ease-out;
+  -moz-animation: slideInDown 0.3s ease-out;
 }
 div.barra{
   z-index: 50;

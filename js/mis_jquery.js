@@ -35,7 +35,7 @@ $(document).ready(function() {
 //menu fijo y cambio de tamaño
  $(window).scroll(function(){
    var scroll = $(window).scrollTop();
-   if(scroll > 500){
+   if(scroll > 200){
     $(".header").addClass('fixed');
   }else{
     $(".header").removeClass('fixed');
