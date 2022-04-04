@@ -1010,3 +1010,8 @@ nav.bg-dark{
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
+
+canvas{
+  height: 100vh;
+  width: 100vw;
+}
