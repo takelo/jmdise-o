@@ -2,9 +2,12 @@ $(document).ready(function () {
   console.log(gsap);
   const canvas = document.querySelector("canvas");
   const c = canvas.getContext("2d");
+
   console.log(canvas);
   canvas.width = innerWidth;
   canvas.height = innerHeight;
+
+  const scoreEl = document.querySelector('#scoreEl');
 
   class Player {
     constructor(x, y, radius, color) {
@@ -141,6 +144,7 @@ $(document).ready(function () {
   // 51 min
 
   let animationId;
+  let score = 0;
   function animate() {
     animationId = requestAnimationFrame(animate);
     c.fillStyle = 'rgb(0,0,0, 0.1)';
@@ -179,10 +183,11 @@ $(document).ready(function () {
         // hypot obtiene distancia entre 2 elementos
         const dist = Math.hypot(projectile.x - enemy.x, projectile.y - enemy.y);
         // projectile touch enemy
-        if(dist - enemy.radius - projectile.radius * 2 < 1){
-
+        if(dist - enemy.radius - projectile.radius < 1){
+          score += 100;
+          scoreEl.innerHTML = score;
           // create particles explosions
-          for (let i = 0 ; i < enemy.radius ; i++){
+          for (let i = 0 ; i < enemy.radius * 2 ; i++){
             // para hacer dandom negativo positivo le resto 0,5
             particles.push(
               new Particle(
@@ -231,4 +236,4 @@ $(document).ready(function () {
 }); //lave document ready
 
 
-// time 1:29
+// time 1:37
