@@ -65,6 +65,7 @@ $(document).ready(function () {
       this.y = this.y + this.velocity.y;
     }
   }
+  const friction = 0.98;
   class Particle {
     constructor(x, y, radius, color, velocity) {
       this.x = x;
@@ -72,18 +73,25 @@ $(document).ready(function () {
       this.radius = radius;
       this.color = color;
       this.velocity = velocity;
+      this.alpha = 1;
     }
     draw() {
+      c.save();
+      c.globalAlpha = this.alpha;
       c.beginPath();
       c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
       c.fillStyle = this.color;
       c.fill();
+      c.restore();
     }
 
     update() {
       this.draw();
+      this.velocity.x *= friction;
+      this.velocity.y *= friction;
       this.x = this.x + this.velocity.x;
       this.y = this.y + this.velocity.y;
+      this.alpha -= 0.01;
     }
   }
   const x = canvas.width / 2;
@@ -91,6 +99,9 @@ $(document).ready(function () {
 
   const player = new Player(x, y, 10, "white");
 
+  const projectiles = [];
+  const enemies = [];
+  const particles = [];
   // const projectile = new Projectile(
   //   canvas.width / 2,
   //   canvas.height / 2,
@@ -102,8 +113,6 @@ $(document).ready(function () {
   //   }
   // )
 
-  const projectiles = [];
-  const enemies = [];
 
   function spawnEnemies() {
     setInterval(() => {
@@ -137,6 +146,14 @@ $(document).ready(function () {
     c.fillStyle = 'rgb(0,0,0, 0.1)';
     c.fillRect(0, 0, canvas.width, canvas.height);
     player.draw();
+    particles.forEach((particle, index ) => {
+      if(particle.alpha <= 0 ){
+        particles.splice(index, 1);
+      }else{
+        particle.update();
+      }
+      particle.update();
+    })
     projectiles.forEach((projectile, index) => {
       projectile.update();
 
@@ -162,8 +179,25 @@ $(document).ready(function () {
         // hypot obtiene distancia entre 2 elementos
         const dist = Math.hypot(projectile.x - enemy.x, projectile.y - enemy.y);
         // projectile touch enemy
-        if(dist - enemy.radius - projectile.radius < 1){
-          if(enemy.radius - 10 > 10){
+        if(dist - enemy.radius - projectile.radius * 2 < 1){
+
+          // create particles explosions
+          for (let i = 0 ; i < enemy.radius ; i++){
+            // para hacer dandom negativo positivo le resto 0,5
+            particles.push(
+              new Particle(
+                projectile.x, 
+                projectile.y, 
+                Math.random() * 2, 
+                enemy.color, 
+                {
+                  x: (Math.random() - 0.5) * (Math.random() * 6),
+                  y: (Math.random() - 0.5) * (Math.random() * 6)
+                }
+              )
+            )
+          }
+          if(enemy.radius - 10 > 5){
             // enemy.radius -= 10;
             gsap.to(enemy,{
               radius: enemy.radius - 10, duration: 0.3
@@ -197,4 +231,4 @@ $(document).ready(function () {
 }); //lave document ready
 
 
-// time 1:19
+// time 1:29
