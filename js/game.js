@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  console.log(gsap);
   const canvas = document.querySelector("canvas");
   const c = canvas.getContext("2d");
   console.log(canvas);
@@ -44,6 +45,27 @@ $(document).ready(function () {
   }
 
   class Enemy {
+    constructor(x, y, radius, color, velocity) {
+      this.x = x;
+      this.y = y;
+      this.radius = radius;
+      this.color = color;
+      this.velocity = velocity;
+    }
+    draw() {
+      c.beginPath();
+      c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+      c.fillStyle = this.color;
+      c.fill();
+    }
+
+    update() {
+      this.draw();
+      this.x = this.x + this.velocity.x;
+      this.y = this.y + this.velocity.y;
+    }
+  }
+  class Particle {
     constructor(x, y, radius, color, velocity) {
       this.x = x;
       this.y = y;
@@ -130,7 +152,6 @@ $(document).ready(function () {
     });
     enemies.forEach((enemy, index) => {
       enemy.update();
-
       const dist = Math.hypot(player.x - enemy.x, player.y - enemy.y);
       // end game
       if(dist - enemy.radius - player.radius < 1){
@@ -140,12 +161,22 @@ $(document).ready(function () {
       projectiles.forEach((projectile, projectileIndex) => {
         // hypot obtiene distancia entre 2 elementos
         const dist = Math.hypot(projectile.x - enemy.x, projectile.y - enemy.y);
-        // touch
+        // projectile touch enemy
         if(dist - enemy.radius - projectile.radius < 1){
-          setTimeout(() => {
-            enemies.splice(index, 1);
-            projectiles.splice(projectileIndex, 1);
-          }, 0);
+          if(enemy.radius - 10 > 10){
+            // enemy.radius -= 10;
+            gsap.to(enemy,{
+              radius: enemy.radius - 10, duration: 0.3
+            })
+            setTimeout(() => {
+              projectiles.splice(projectileIndex, 1);
+            }, 0);
+          }else{
+            setTimeout(() => {
+              enemies.splice(index, 1);
+              projectiles.splice(projectileIndex, 1);
+            }, 0);
+          }
         }
       });
     });
@@ -166,4 +197,4 @@ $(document).ready(function () {
 }); //lave document ready
 
 
-// time 1:11
+// time 1:19
