@@ -60,15 +60,15 @@ $(document).ready(function() {
 
 
 
- let idioma = navigator.language || navigator.userLanguage;
- idioma = idioma.substring(0,2);
-//  idioma = "en";
+//  let idioma = navigator.language || navigator.userLanguage;
+//  idioma = idioma.substring(0,2);
+// //  idioma = "en";
 
- $.getJSON('js/lang.json', function(json){
-   $('.lang').each(function(index,value){
-    $(this).text(json[idioma][$(this).attr('key')]);
-   });
- });
+//  $.getJSON('js/lang.json', function(json){
+//    $('.lang').each(function(index,value){
+//     $(this).text(json[idioma][$(this).attr('key')]);
+//    });
+//  });
 
 
 
