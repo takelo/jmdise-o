@@ -8,6 +8,9 @@ $(document).ready(function () {
   canvas.height = innerHeight;
 
   const scoreEl = document.querySelector('#scoreEl');
+  const startGameBtn = document.querySelector('#startGameBtn');
+  const modalUI = document.querySelector('#modalUI');
+  const modalScore = document.querySelector('#modalScore');
 
   class Player {
     constructor(x, y, radius, color) {
@@ -100,11 +103,20 @@ $(document).ready(function () {
   const x = canvas.width / 2;
   const y = canvas.height / 2;
 
-  const player = new Player(x, y, 10, "white");
+  let player = new Player(x, y, 10, "white");
+  let projectiles = [];
+  let enemies = [];
+  let particles = [];
 
-  const projectiles = [];
-  const enemies = [];
-  const particles = [];
+  function init(){
+    player = new Player(x, y, 10, "white");
+    projectiles = [];
+    enemies = [];
+    particles = [];
+    score = 0;
+    scoreEl.innerHTML = 0;
+    modalScore.innerHTML = 0;
+  }
   // const projectile = new Projectile(
   //   canvas.width / 2,
   //   canvas.height / 2,
@@ -174,9 +186,11 @@ $(document).ready(function () {
     enemies.forEach((enemy, index) => {
       enemy.update();
       const dist = Math.hypot(player.x - enemy.x, player.y - enemy.y);
-      // end game
+      // end game - game over
       if(dist - enemy.radius - player.radius < 1){
         cancelAnimationFrame(animationId);
+        modalUI.style.display = 'flex';
+        modalScore.innerHTML = score;
       }
 
       projectiles.forEach((projectile, projectileIndex) => {
@@ -184,8 +198,6 @@ $(document).ready(function () {
         const dist = Math.hypot(projectile.x - enemy.x, projectile.y - enemy.y);
         // projectile touch enemy
         if(dist - enemy.radius - projectile.radius < 1){
-          score += 100;
-          scoreEl.innerHTML = score;
           // create particles explosions
           for (let i = 0 ; i < enemy.radius * 2 ; i++){
             // para hacer dandom negativo positivo le resto 0,5
@@ -203,14 +215,20 @@ $(document).ready(function () {
             )
           }
           if(enemy.radius - 10 > 5){
+            // incrase score hit
+            score += 100;
+            scoreEl.innerHTML = score;
             // enemy.radius -= 10;
             gsap.to(enemy,{
               radius: enemy.radius - 10, duration: 0.3
-            })
+            });
             setTimeout(() => {
               projectiles.splice(projectileIndex, 1);
             }, 0);
           }else{
+            // incrase score erase enemy
+            score += 250;
+            scoreEl.innerHTML = score;
             setTimeout(() => {
               enemies.splice(index, 1);
               projectiles.splice(projectileIndex, 1);
@@ -231,9 +249,13 @@ $(document).ready(function () {
     projectiles.push(new Projectile(canvas.width / 2, canvas.height / 2, 5, "white", velocity));
   });
 
-  animate();
-  spawnEnemies();
+  startGameBtn.addEventListener("click", (e) => {
+    init();
+    animate();
+    spawnEnemies();
+    modalUI.style.display = 'none';
+  });
+
 }); //lave document ready
 
 
-// time 1:37

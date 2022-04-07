@@ -7,11 +7,30 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="css/game.css">
+	
 	<title>Document</title>
 </head>
+<style>
+	body.game{
+  margin: 0;
+  background: black;
+}
+</style>
 <body class="game">
+
+	
 	<div class="fixed text-white text-sm ml-2 mt-1 select-none"><span>Score: </span><span id="scoreEl">0</span></div>
 	<canvas></canvas>
+
+	<div class="fixed inset-0 flex items-center justify-center" id="modalUI">
+		<div class="bg-white max-w-md w-full p-6 text-center">
+			<h1 class="text-4xl font-bold leading-none" id="modalScore">0</h1>
+			<p class="text-sm text-gray-700 mb-4">Points</p>
+			<div>
+				<button id="startGameBtn" class="bg-blue-500 text-white w-full py-3 rounded-full text-sm">Start Game</button>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
