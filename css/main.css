@@ -138,6 +138,7 @@ div.hamburger-inner, div.hamburger-inner:after, div.hamburger-inner:before {
     transition-timing-function: ease;
     transition-duration: .2s;
     transition-property: transform,opacity;
+    opacity: 0.8;
 }
 div.hamburger-inner:before {
     top: 8px;
