@@ -26,7 +26,7 @@
 .btn.btn-primary{
   background: none;
   border: none;
-  color: var(--verde);
+  color: #15e315;
   font-size: 1rem;
   font-family: computer, serif;
 }
@@ -138,7 +138,7 @@ div.hamburger-inner, div.hamburger-inner:after, div.hamburger-inner:before {
     transition-timing-function: ease;
     transition-duration: .2s;
     transition-property: transform,opacity;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 div.hamburger-inner:before {
     top: 8px;
@@ -192,7 +192,7 @@ div.hamburger.open .hamburger-inner:before {
  color:var(--naranja);
 }
 .informacion-portada .titulo p span.texto{
- color:var(--verde);
+ color:#15e315;
  text-transform: uppercase;
 }
 
