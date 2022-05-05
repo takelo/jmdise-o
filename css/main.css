@@ -1089,3 +1089,34 @@ canvas{
   color: #fff;
   cursor: pointer;
 }
+
+
+
+.road-city {
+	position: relative;
+	height: 100vh;
+  max-height: 832px;
+	background:  url(../img/bg.jpg);
+	background-position: bottom left;
+	animation: driving 10s linear infinite;
+}
+
+.car {
+	position: absolute;
+	left: 20%;
+	bottom: 10px;
+	width: 100px;
+}
+
+.motorbike {
+	position: absolute;
+	left: 50%;
+	bottom: 45px;
+	width: 200px;
+}
+
+@keyframes driving {
+	from { background-position: bottom left; }
+
+	to { background-position: bottom right; }
+}
