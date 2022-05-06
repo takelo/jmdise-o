@@ -1118,7 +1118,7 @@ canvas{
 	bottom: 40px;
 	width: 200px;
   animation: fast2 8s linear infinite;
-  overflow: hidden;
+
 }
 
 @keyframes driving {
