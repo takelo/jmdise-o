@@ -1094,8 +1094,8 @@ canvas{
 
 .road-city {
 	position: relative;
-	height: 100vh;
-  max-height: 832px;
+	height: 832px;
+  /* max-height: 832px; */
 	background:  url(../img/bg.jpg);
 	background-position: bottom left;
 	animation: driving 10s linear infinite;
