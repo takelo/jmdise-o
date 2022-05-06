@@ -1099,6 +1099,7 @@ canvas{
 	background:  url(../img/bg.jpg);
 	background-position: bottom left;
 	animation: driving 10s linear infinite;
+  overflow: hidden;
 }
 
 .sonic {
@@ -1108,7 +1109,7 @@ canvas{
 	width: 100px;
   animation: fast1 5s linear infinite;
   z-index: 1;
-  overflow: hidden;
+ 
 }
 
 .zero {
