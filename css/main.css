@@ -232,7 +232,7 @@ div.hamburger.open .hamburger-inner:before {
 
 @media only screen and (min-width:900px) {
   .servicios .contenedor-video video{
-    height: 120vh;
+    height: 150vh;
   }
 }
 
@@ -1094,31 +1094,46 @@ canvas{
 
 .road-city {
 	position: relative;
-	height: 832px;
+	height: 732px;
   /* max-height: 832px; */
 	background:  url(../img/bg.jpg);
 	background-position: bottom left;
 	animation: driving 10s linear infinite;
 }
 
-.car {
+.sonic {
 	position: absolute;
 	left: 20%;
-	bottom: 10px;
+	bottom: 15px;
 	width: 100px;
+  animation: fast1 5s linear infinite;
+  z-index: 1;
 }
 
-.motorbike {
+.zero {
 	position: absolute;
 	left: 30%;
-	bottom: 45px;
+	bottom: 40px;
 	width: 200px;
+  animation: fast2 8s linear infinite;
 }
 
 @keyframes driving {
 	from { background-position: bottom left; }
 
 	to { background-position: bottom right; }
+}
+@keyframes fast1 {
+	0% { transform: translateX(0); }
+  50% {transform: translateX(500px);}
+	100% { transform: translate(0); }
+}
+@keyframes fast2 {
+	0% { transform: translateX(0); }
+  25% {transform: translateX(-300px);}
+  40% {transform: translateX(100); transform: rotate(-20deg);}
+  75% {transform: translateX(300px); }
+	100% { transform: translate(0); }
 }
 
 
@@ -1138,9 +1153,15 @@ canvas{
   transform: translate(-50%, -50%);
   color: black;
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 20px;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
+}
+
+@media only screen and (min-width:600px) {
+  .text {
+    font-size: 45px;
+  }
 }
 
 .square{
