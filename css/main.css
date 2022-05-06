@@ -1108,6 +1108,7 @@ canvas{
 	width: 100px;
   animation: fast1 5s linear infinite;
   z-index: 1;
+  overflow: hidden;
 }
 
 .zero {
@@ -1116,6 +1117,7 @@ canvas{
 	bottom: 40px;
 	width: 200px;
   animation: fast2 8s linear infinite;
+  overflow: hidden;
 }
 
 @keyframes driving {
