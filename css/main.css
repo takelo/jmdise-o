@@ -1117,6 +1117,7 @@ canvas{
 	left: 30%;
 	bottom: 40px;
 	width: 200px;
+  transform-origin: bottom left;
   animation: fast2 8s linear infinite;
 
 }
@@ -1139,6 +1140,20 @@ canvas{
 	100% { transform: translate(0); }
 }
 
+/* bg color change*/
+@keyframes bgchange {
+	0% { background-color: #272727 }
+
+	20% { background-color: rgb(50, 50, 220) }
+
+	40% { background-color: tomato }
+
+	60% { background-color: lightblue }
+
+	80% { background-color: darkgreen }
+
+	100% { background-color: #272727 }
+}
 
 /* boxes */
 .boxes {
@@ -1147,9 +1162,11 @@ canvas{
   background: white;
     height: 80vh;
   overflow: hidden;
+  animation: bgchange 20s infinite;
 }
 
 .text {
+  font-family: 'Oswald', sans-serif;;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1165,6 +1182,22 @@ canvas{
   .text {
     font-size: 45px;
   }
+}
+
+
+.text span:before {
+	content: 'DEVELOP';
+	text-transform: uppercase;
+	color: #1B1464;
+	animation: word-switch 5s infinite;
+}
+
+@keyframes word-switch {
+	0% { content: 'design'; font-family: 'Permanent Marker', cursive;}
+
+	50% { content: 'develop' ; font-family: computer, serif; }
+
+	100% { content: 'ninja' }
 }
 
 .square{
