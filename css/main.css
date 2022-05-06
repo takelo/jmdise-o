@@ -513,6 +513,7 @@ div.barra{
   z-index: 50;
   position: relative;
   background-color: rgba(0,0,0,0.60)!important;
+  padding: 10px 0;
   /* border-bottom: 1px solid black; */
   /* transition: all 2s ease; */
 }
@@ -571,19 +572,42 @@ nav.navegacion-principal a{
   text-align: center;
   clear: both;
   transition: all .6s ease;
-}
-nav.navegacion-principal a:hover{
-  background-color: #b31717;
-  color:white!important;
-}
-nav.navegacion-principal a.activo{
-  color:black;
-  text-decoration: underline;
+  position: relative;
 }
 
 
 
+nav.navegacion-principal ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #ff6600;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
 
+nav.navegacion-principal a:hover span{
+  transform: scaleY(1);
+}
+
+nav.navegacion-principal span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.15s
+}
+
+nav.navegacion-principal span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.3s
+}
+
+nav.navegacion-principal span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.45s
+}
 
 @media only screen and (min-width:990px) {
   div.contenedor_menu{
@@ -603,8 +627,10 @@ nav.navegacion-principal a.activo{
     display: inline-block;
     font-size: 1rem;
     width: auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   nav.redes_sociales{
     width: auto;
@@ -1283,3 +1309,5 @@ canvas{
   transform: rotate(180deg);
   opacity: 0; }
 }
+
+
