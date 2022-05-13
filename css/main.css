@@ -1125,7 +1125,7 @@ canvas{
 
 .road-city {
 	position: relative;
-	height: 732px;
+	height: 250px;
   /* max-height: 832px; */
 	background:  url(../img/bg.jpg);
 	background-position: bottom left;
@@ -1228,7 +1228,7 @@ canvas{
 
 	50% { content: 'develop' ; font-family: computer, serif; }
 
-	100% { content: 'web' ; font-family: 'Fredericka the Great', cursive;}
+	100% { content: 'fullstack' ; }
 }
 
 .square{
