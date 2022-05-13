@@ -1138,7 +1138,7 @@ canvas{
 	left: 20%;
 	bottom: 15px;
 	width: 100px;
-  animation: fast1 5s linear infinite;
+  animation: fast1 5s ease-in-out infinite;
   z-index: 1;
  
 }
@@ -1160,7 +1160,7 @@ canvas{
 }
 @keyframes fast1 {
 	0% { transform: translateX(0); }
-  50% {transform: translateX(500px);}
+  30% {transform: translateX(500px);}
 	100% { transform: translate(0); }
 }
 @keyframes fast2 {
