@@ -1196,6 +1196,11 @@ canvas{
   animation: bgchange 20s infinite;
 }
 
+@media only screen and (min-width:600px) {
+  .boxes {
+    height: 64vh;;
+  }
+}
 .text {
   font-family: 'Oswald', sans-serif;;
   position: absolute;
