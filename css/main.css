@@ -229,7 +229,7 @@ div.hamburger.open .hamburger-inner:before {
 }
 
 .servicios .contenedor-video video{
-  height: 260vh;
+  height: 300vh;
   width: 100%;
   object-fit: cover;
     /* TODO: silence is  */
