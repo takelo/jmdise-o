@@ -45,7 +45,7 @@ $(document).ready(function() {
      }else{
          $(".flotante").fadeOut(1000);
      }
-   if(scroll > 2700){
+   if(scroll > 3000){
        $(".model-wrapper").fadeIn(1000);
      }else{
          $(".model-wrapper").fadeOut(1000);
