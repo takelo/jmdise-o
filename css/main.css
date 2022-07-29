@@ -491,18 +491,7 @@ footer{
   background: #222222;
 }
 
-/* boton flotante */
 
-a.flotante {
-  display: none;
-  z-index:50;
-  position:fixed;
-  bottom:10vh;
-  left:5vw;
-}
-a.flotante img{
-  width: 100px;
-}
 
 
 
@@ -1204,7 +1193,7 @@ canvas{
 
 @media only screen and (min-width:600px) {
   .boxes {
-    height: 64vh;;
+    /* height: 64vh;; */
   }
 }
 .text {
@@ -1400,4 +1389,31 @@ ul.lighting li {
 
 .lighting li:nth-child(8) {
 	animation-delay: 0.7s
+}
+
+/* boton flotante */
+
+a.flotante {
+  display: none;
+  z-index:50;
+  position:fixed;
+  bottom:10vh;
+  left:5vw;
+}
+a.flotante img{
+  width: 100px;
+}
+
+.model-wrapper{
+  display: none;
+  position:fixed;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+}
+model-viewer{
+  /* width: 100vw; */
+  /* position: sticky;
+
+  height: 300px; */
 }
