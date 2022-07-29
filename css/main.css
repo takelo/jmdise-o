@@ -1410,8 +1410,10 @@ a.flotante img{
   right: 0;
   top: 50%;
   z-index: 1;
+  width: 200px;
 }
 model-viewer{
+  height: 75px;
   /* width: 100vw; */
   /* position: sticky;
 
