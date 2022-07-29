@@ -1408,7 +1408,7 @@ a.flotante img{
   display: none;
   position:fixed;
   right: 0;
-  top: 50%;
+  top: 50vh;
   z-index: 1;
   width: 200px;
 }
