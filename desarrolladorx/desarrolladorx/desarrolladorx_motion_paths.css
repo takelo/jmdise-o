@@ -1,0 +1,54 @@
+#page1.gwd-play-animation .gwd-motion-path-13gp-anim-x {
+  --gwd-motion-path: {
+    "tangentFollowing": false, "sections": [ {
+      "controlPoints": ["0px", "0px", "229.87px", "227.31px", "242.13px", "350.97px", "0px", "335px"], "startTimeMs": 0, "endTimeMs": 400, "easing": "linear"
+    }
+    ], "positionTol":0.5, "angleTol":1, "optimizationLevel":0
+  }
+  ;
+  animation:gwd-motion-path-13gp-keys-x 0.4s linear 0s 5 normal forwards running;
+  transform:translate3d(0px, 0px, 0px);
+}
+@keyframes gwd-motion-path-13gp-keys-x {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.31, 0.3462, 0.6194, 0.73);
+  }
+  50% {
+    transform: translate3d(164.72px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.5576, -2.5629, 0.7721, -0.9221);
+  }
+  70% {
+    transform: translate3d(155.41px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.3562, 0.3066, 0.6687, 0.6671);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+#page1.gwd-play-animation .gwd-motion-path-13gp-anim-y {
+  animation: gwd-motion-path-13gp-keys-y 0.4s linear 0s 5 normal forwards running;
+  transform: translate3d(0px, 0px, 0px);
+}
+@keyframes gwd-motion-path-13gp-keys-y {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.3582, 0.3078, 0.7053, 0.6291);
+  }
+  62.5% {
+    transform: translate3d(0px, 274.91px, 0px);
+    animation-timing-function: cubic-bezier(0.1669, 0.5286, 0.3278, 1.1542);
+  }
+  100% {
+    transform: translate3d(0px, 335px, 0px);
+  }
+}
+[data-gwd-motion-path-node] {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}

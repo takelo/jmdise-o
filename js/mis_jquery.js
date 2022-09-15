@@ -28,46 +28,55 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 
-  // lettering
-  $(".titulo h2").lettering();
-  $(".char1").fadeIn(200);
-  $(".char2").fadeIn(300);
-  $(".char3").fadeIn(400);
-  $(".char4").fadeIn(500);
-  $(".char5").fadeIn(600);
-  $(".char6").fadeIn(650);
-  $(".char7").fadeIn(700);
-  $(".char8").fadeIn(800);
-  $(".char9").fadeIn(900);
-  $(".char10").fadeIn(1000);
-  $(".char11").fadeIn(1100);
-  $(".char12").fadeIn(1200);
-  $(".char13").fadeIn(1300);
-  $(".char14").fadeIn(1400);
-  $(".char15").fadeIn(1500);
-  $(".char16").fadeIn(1600);
-  $(".char17").fadeIn(1700);
-  $(".char18").fadeIn(1800);
-  $(".char19").fadeIn(1900);
-  $(".char20").fadeIn(2000);
-  $(".char21").fadeIn(2100);
-  $(".char22").fadeIn(2200);
-  $(".char23").fadeIn(2300);
-  $(".char24").fadeIn(2400);
-  $(".char25").fadeIn(2500);
-  $(".char26").fadeIn(2600);
-  // $("div.informacion p").fadeIn(3300);
+
 
 
 // boton flotante
 //menu fijo y cambio de tamaño
  $(window).scroll(function(){
    var scroll = $(window).scrollTop();
-   if(scroll > 300){
+   if(scroll > 200){
+    $(".header").addClass('fixed');
+  }else{
+    $(".header").removeClass('fixed');
+  }
+   if(scroll > 2500){
        $(".flotante").fadeIn(1000);
      }else{
          $(".flotante").fadeOut(1000);
      }
+   if(scroll > 3500){
+       $(".model-wrapper").fadeIn(1000);
+     }else{
+         $(".model-wrapper").fadeOut(1000);
+     }
+    
  });
+
+ $(".quien-soy").waypoint(function(){
+   $(".quien-soy").css('background-color', 'black');
+   $(".quien-soy img").css('transform', 'rotate(360deg)');
+   $(".quien-soy img").css('filter', 'grayscale(0)');
+   // $(".resumen-evento li:nth-child(2) p").animateNumber({number:15},1200);
+   // $(".resumen-evento li:nth-child(3) p").animateNumber({number:3},1500);
+   // $(".resumen-evento li:nth-child(4) p").animateNumber({number:9},1500);
+ }, {
+   offset: "60%"
+ });
+
+
+
+//  let idioma = navigator.language || navigator.userLanguage;
+//  idioma = idioma.substring(0,2);
+// //  idioma = "en";
+
+//  $.getJSON('js/lang.json', function(json){
+//    $('.lang').each(function(index,value){
+//     $(this).text(json[idioma][$(this).attr('key')]);
+//    });
+//  });
+
+
+
 
 });//lave document ready

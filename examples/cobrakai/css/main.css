@@ -1,0 +1,129 @@
+img.logo{
+  width: 80px;
+}
+/* generales */
+body{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Fredoka One', cursive;
+}
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  border-bottom: 1px solid #9e9e9e;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+h3 i{
+  color:rgba(100,100,1,0.5);
+  float:right;
+}
+/* header */
+header{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+ul.redes-sociales{
+  padding-top: 20px;
+}
+ul.redes-sociales li:not(:last-child) {
+  margin-right: 40px;
+}
+
+ul.redes-sociales a{
+  color: white;
+}
+ul.redes-sociales a:hover{
+  color: #fdfc01;
+  transition: 0.5s;
+}
+/* BARRA MANU */
+
+div.barra-menu{
+  background-color: #fdfc01;
+  font-size: 16px;
+  font-weight: 500;
+  /* max-height: 30px; */
+  padding-bottom: 2px;
+  box-shadow: 10px 5px 5px black;
+}
+div.barra-menu a{
+  color: #0d0d3a;
+}
+
+div.barra-menu a:hover{
+  color: white;
+  text-decoration: none;
+}
+div.barra-menu  ul > li:not(:last-child) {
+  margin-right: 40px;
+}
+
+div.carousel-item{
+  max-height: 400px;
+}
+
+.carousel-caption {
+	background-color: rgba(41, 23, 1, 0.75);
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 30px;
+	text-align: left;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  width: 400px;
+}
+
+	.carousel-caption p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+  .carousel-caption img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .carousel-caption a {
+    border-radius: 0;
+    font-weight: bold;
+    color: #291701;
+    border: none;
+  }
+	.carousel-caption h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.carousel-caption .h4 {
+		font-size: 20px;
+		margin-bottom: 30px;
+		margin-top: 8px;
+	}
+
+main .container{
+  box-shadow: 0 7px 18px rgba(0, 0, 0, .5);
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* footer */
+footer{
+  padding-top: 20px;
+  margin-top:20px;
+  font-size: 10px;
+  background-color: rgba(0,0,0,0.75);
+}
+
+
+/* helper */
+
+.pad-top {
+	padding-top: 20px;
+}

@@ -1,0 +1,33 @@
+{
+    "es":{
+        "slogan":"Diseño y Desarrollo Web a Medida ^^",
+        "inicio":"Inicio",
+        "portfolio":"Portfolio",
+        "quiensoy":"Sobre mi",
+        "contacto":"Contacto",
+        "presentacion-o": "presentacion",
+        "mi-nombre-o": "titulo",
+        "mi-nombre-c": "/titulo",
+        "desarrollador-web": "Diseño y Desarrollo Web",
+        "desarrollador-web2": "a la medida de tu Empresa",
+        "profesion-o": "servicio",
+        "profesion-c": "/servicio",
+        "presentacion-c": "/presentacion",
+        "contactame": "Presiona para contactar YA..."
+    },
+    "en":{
+        "slogan":"Web design 100%  ^^",
+        "inicio":"Home",
+        "portfolio":"Portfolio",
+        "quiensoy":"Meet me",
+        "contacto":"Contact me",
+        "presentacion-o": "presentation",
+        "mi-nombre-o": "title",
+        "mi-nombre-c": "/title",
+        "desarrollador-web": "Web Developer",
+        "profesion-o": "service",
+        "profesion-c": "/service",
+        "presentacion-c": "/presentation",
+        "contactame": "Contact Now..."
+    }
+}
