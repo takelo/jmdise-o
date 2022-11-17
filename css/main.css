@@ -371,6 +371,7 @@ section.quien-soy img:hover section.quien-soy{
 /* portafolio */
 section.portfolio{
   padding: 10vh 0;
+  position: relative;
 }
 section.portfolio h2{
   text-align: center;
@@ -1427,4 +1428,15 @@ model-viewer{
   model-viewer{
     height: 150px;
   }
+}
+
+canvas {
+  margin-top:70px;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 80vh;
+	max-width: 100%;
+	background-color: transparent;
 }
