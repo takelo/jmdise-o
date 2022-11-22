@@ -33,7 +33,7 @@ class Particle {
 		this.reset();
 	}
 	reset() {
-		this.radius = 1;
+		this.radius = 3;
 		this.x = mousePos.x;
 		this.y = mousePos.y;
 		this.explosionRadius = 2;
@@ -49,9 +49,10 @@ class Particle {
 	
 	draw() {
 		ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
+    ctx.arc(this.x, this.y, this.radius, 0, 1 * Math.PI, false);
     // ctx.fillStyle = `rgba(255, ${this.color}, ${this.color}, ${this.alpha})`;
-    ctx.fillStyle = `hsl(${Math.random() * 360}, 50%, 50%)`;
+    // ctx.fillStyle = `hsl(${Math.random() * 360}, 50%, 50%)`;
+    ctx.fillStyle = `hsl(361, 50%, 50%)`;
     ctx.fill();
 	}
 	
