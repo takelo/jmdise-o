@@ -1440,3 +1440,179 @@ canvas {
 	max-width: 100%;
 	background-color: transparent;
 }
+
+
+/* ////
+//scroll animation
+//// */
+
+.scroll-animation{
+  background-color: #e2e2e2;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: bgchange 20s reverse; */
+}
+.scroll-animation .item{
+  position: absolute;
+}
+
+.scroll-animation .object1{
+  transform: rotateY(-25deg);
+  border: 2px solid black;
+  border-radius: 50%;
+	
+	/* z-index: 3; */
+  background-image: url('../img/juan.png');
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  animation: rotate 4s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+.scroll-animation .object2{
+  transform: rotateY(-25deg);
+  top:30%;
+  left:50%;
+
+
+  background-image: url('../img/invader.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+}
+.icon{
+	font-size: 33px;
+}
+.scroll-animation .icon-1{
+	top: 33%;
+	left: 37%;
+  /* animation: float 10s linear infinite; */
+  color: #A155C5;
+  transform: rotateZ(-10deg);
+}
+.scroll-animation .icon-2{
+	top: 47%;
+	left: 30%;
+  animation: float 9s linear infinite;
+  animation-direction: reverse;
+  animation-delay: -5s;
+  color: white;
+}
+.scroll-animation .icon-3{
+	top: 63%;
+	left: 33%;
+  animation: float 11s linear infinite;
+  animation-direction: alternate;
+  animation-delay: -2s;
+  color:#ECA3CB;
+  transform: rotateZ(-15deg);
+}
+.scroll-animation .icon-4{
+	top: 33%;
+	right: 35%;
+  animation: float 14s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: -9s;
+  color:yellow;
+}
+.scroll-animation .icon-5{
+	top: 44%;
+	right: 30%;
+  /* animation: float 10s linear infinite; */
+  animation-direction: alternate;
+  animation-delay: -5s;
+  transform: rotateZ(25deg);
+color: #1e981c;
+}
+.scroll-animation .icon-6{
+	top: 65%;
+	right: 40%;
+  /* animation: float 11s linear infinite; */
+  animation-direction: alternate;
+  animation-delay: -2s;
+  transform: rotateZ(10deg);
+  color:pink;
+}
+/* .scroll-animation .icon7{
+	max-width: 75px;
+	top: 276px;
+	left: 130px; 
+	z-index: 3;
+} */
+
+@media screen and (max-width: 750px) {
+  .scroll-animation .icon-1{
+    left: 17%;
+  }
+  .scroll-animation .icon-2{
+    left: 10%;
+  }
+  .scroll-animation .icon-3{
+    left: 13%;
+  }
+  .scroll-animation .icon-4{
+    right: 15%;
+  }
+  .scroll-animation .icon-5{
+    right: 10%;
+  }
+  .scroll-animation .icon-6{
+    right: 20%;
+  }
+}
+@keyframes float {
+from{
+  transform:rotate(0deg) translate3d(3px, 4px, 10px) 
+
+} 
+to{
+  transform: rotate(360deg) translate3d(3px, 4px, 10px) rotate(-360deg);
+}
+}
+@keyframes rotate {
+  0%   {  transform: rotateY(-25deg);}
+  50%  { transform: rotateY(-50deg);}
+  100% {  transform: rotateY(-25deg);}
+
+}
+
+
+.scroll-animate {
+  position: absolute;
+  right: calc(100% - (150% * var(--animation)));
+  transform: translateX(-120%);
+  overflow: hidden;
+  /* transform: rotate(calc(-360deg * var(--animation))); */
+  overflow: hidden;
+}
+
+.scroll-animate-1 {
+  --animation: var(--first-animation);
+  top: 10%;
+}
+.scroll-animate-1 img{
+  max-width: 75px;
+}
+
+
+.scroll-animate-b {
+  position: absolute;
+  left: calc(120% - (150% * var(--animation)));
+  transform: translateX(-20%);
+  /* transform: rotate(calc(-360deg * var(--animation))); */
+}
+.scroll-animate-2 {
+  --animation: var(--second-animation);
+  bottom: 10%;
+}
+.scroll-animate-2 img{
+  max-width: 75px;
+}
