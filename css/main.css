@@ -1447,7 +1447,7 @@ canvas {
 //// */
 
 .scroll-animation{
-  background-color: #e2e2e2;
+  background-color:var(--naranja) ;
   height: 100vh;
   position: relative;
   display: flex;
@@ -1494,9 +1494,12 @@ canvas {
 .scroll-animation .icon-1{
 	top: 33%;
 	left: 37%;
-  /* animation: float 10s linear infinite; */
+  animation: float 10s linear infinite;
   color: #A155C5;
   transform: rotateZ(-10deg);
+}
+.scroll-animation .icon-1 i{
+  transform: rotateZ(-15deg); 
 }
 .scroll-animation .icon-2{
 	top: 47%;
@@ -1504,16 +1507,20 @@ canvas {
   animation: float 9s linear infinite;
   animation-direction: reverse;
   animation-delay: -5s;
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
 }
 .scroll-animation .icon-3{
 	top: 63%;
 	left: 33%;
-  animation: float 11s linear infinite;
-  animation-direction: alternate;
+
+  animation: float 11s linear infinite; 
+  animation-direction: alternate; 
   animation-delay: -2s;
-  color:#ECA3CB;
-  transform: rotateZ(-15deg);
+  color:red;
+  /* transform: rotateZ(-15deg); */
+}
+.scroll-animation .icon-3 i{
+   transform: rotateZ(10deg); 
 }
 .scroll-animation .icon-4{
 	top: 33%;
@@ -1526,20 +1533,27 @@ canvas {
 .scroll-animation .icon-5{
 	top: 44%;
 	right: 30%;
-  /* animation: float 10s linear infinite; */
+  animation: float 10s linear infinite;
   animation-direction: alternate;
   animation-delay: -5s;
-  transform: rotateZ(25deg);
-color: #1e981c;
+  color: white;
+
+}
+.scroll-animation .icon-5 i{
+  transform: rotateZ(25deg); 
 }
 .scroll-animation .icon-6{
-	top: 65%;
+	top: 58%;
 	right: 40%;
   /* animation: float 11s linear infinite; */
   animation-direction: alternate;
   animation-delay: -2s;
   transform: rotateZ(10deg);
-  color:pink;
+  color:#13bdb4;
+  color: var(--verde)
+}
+.scroll-animation .icon-6 i{
+  transform: rotateZ(10deg); 
 }
 /* .scroll-animation .icon7{
 	max-width: 75px;
@@ -1556,7 +1570,7 @@ color: #1e981c;
     left: 10%;
   }
   .scroll-animation .icon-3{
-    left: 13%;
+    left: 23%;
   }
   .scroll-animation .icon-4{
     right: 15%;
