@@ -1453,6 +1453,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   /* animation: bgchange 20s reverse; */
 }
 .scroll-animation .item{
