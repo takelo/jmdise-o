@@ -1474,6 +1474,8 @@ canvas {
   max-height: 250px;
   animation: rotate 4s ease-in-out infinite;
   animation-fill-mode: forwards;
+
+  box-shadow: 14px 60px 73px rgba(0, 0, 0, .5);
 }
 .scroll-animation .object2{
   transform: rotateY(-25deg);
@@ -1488,9 +1490,13 @@ canvas {
   width: 100%;
   max-width: 250px;
   max-height: 250px;
+
+
+
 }
 .icon{
 	font-size: 33px;
+
 }
 .scroll-animation .icon-1{
 	top: 33%;
@@ -1615,6 +1621,7 @@ to{
 }
 .scroll-animate-1 img{
   max-width: 75px;
+  
 }
 
 
