@@ -1187,7 +1187,7 @@ canvas{
   position: relative;
   width: 100%;
   background: white;
-    height: 80vh;
+    height: 95vh;
   overflow: hidden;
   animation: bgchange 20s infinite;
 }
@@ -1441,6 +1441,12 @@ canvas {
 	background-color: transparent;
 }
 
+@media only screen and (min-width:1200px) {
+  canvas {
+display: none;
+  }
+}
+
 
 /* ////
 //scroll animation
@@ -1476,13 +1482,12 @@ canvas {
   animation-fill-mode: forwards;
 
   box-shadow: 14px 60px 73px rgba(0, 0, 0, .5);
+  z-index: 1;
 }
-.scroll-animation .object2{
+/* .scroll-animation .object2{
   transform: rotateY(-25deg);
   top:30%;
   left:50%;
-
-
   background-image: url('../img/invader.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -1490,10 +1495,7 @@ canvas {
   width: 100%;
   max-width: 250px;
   max-height: 250px;
-
-
-
-}
+} */
 .icon{
 	font-size: 33px;
 
@@ -1501,7 +1503,7 @@ canvas {
 .scroll-animation .icon-1{
 	top: 33%;
 	left: 37%;
-  animation: float 10s linear infinite;
+  animation: float 40s linear infinite;
   color: #A155C5;
   transform: rotateZ(-10deg);
 }
@@ -1511,20 +1513,22 @@ canvas {
 .scroll-animation .icon-2{
 	top: 47%;
 	left: 30%;
-  animation: float 9s linear infinite;
+  animation: float 14s linear infinite;
   animation-direction: reverse;
   animation-delay: -5s;
   color: rgba(0, 0, 0, 0.5);
+  /* z-index: 2; */
 }
 .scroll-animation .icon-3{
 	top: 63%;
 	left: 33%;
 
-  animation: float 11s linear infinite; 
-  animation-direction: alternate; 
+  animation: float 15s linear infinite; 
+  /* animation-direction: alternate;  */
   animation-delay: -2s;
   color:red;
   /* transform: rotateZ(-15deg); */
+  z-index: 2;
 }
 .scroll-animation .icon-3 i{
    transform: rotateZ(10deg); 
@@ -1532,7 +1536,7 @@ canvas {
 .scroll-animation .icon-4{
 	top: 33%;
 	right: 35%;
-  animation: float 14s ease-in-out infinite;
+  animation: float 22s ease-in-out infinite;
   animation-direction: alternate;
   animation-delay: -9s;
   color:yellow;
@@ -1540,10 +1544,11 @@ canvas {
 .scroll-animation .icon-5{
 	top: 44%;
 	right: 30%;
-  animation: float 10s linear infinite;
+  animation: float 33s linear infinite;
   animation-direction: alternate;
   animation-delay: -5s;
   color: white;
+  z-index: 2;
 
 }
 .scroll-animation .icon-5 i{
@@ -1552,12 +1557,12 @@ canvas {
 .scroll-animation .icon-6{
 	top: 58%;
 	right: 40%;
-  /* animation: float 11s linear infinite; */
+  animation: float 40s linear infinite; 
   animation-direction: alternate;
   animation-delay: -2s;
-  transform: rotateZ(10deg);
   color:#13bdb4;
-  color: var(--verde)
+  color: var(--verde);
+  z-index: 2;
 }
 .scroll-animation .icon-6 i{
   transform: rotateZ(10deg); 
@@ -1591,11 +1596,11 @@ canvas {
 }
 @keyframes float {
 from{
-  transform:rotate(0deg) translate3d(3px, 4px, 10px) 
+  transform:rotate(0deg) translate3d(10px, 15px, 20px) 
 
 } 
 to{
-  transform: rotate(360deg) translate3d(3px, 4px, 10px) rotate(-360deg);
+  transform: rotate(360deg) translate3d(10px, 15px, 20px) rotate(-360deg);
 }
 }
 @keyframes rotate {
