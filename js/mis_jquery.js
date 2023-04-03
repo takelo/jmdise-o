@@ -78,8 +78,8 @@ $(document).ready(function() {
 
 
 const triggers = [
-  { name: "first", from: 100, to: 800 },
-  { name: "second", from: 400, to: 900 },
+  { name: "first", from: 100, to: 1100 },
+  { name: "second", from: 400, to: 1400 },
   { name: "third", from: 600, to: 850 }
 ];
 
