@@ -1743,27 +1743,29 @@ p {
  /* start at 0 so they don't appear while loading */
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
-  animation: fly 20s infinite linear;
   /* animation: fly 20s infinite linear; */
+  animation: fly 20s infinite linear;
   animation-delay: 0.125s;
   z-index: 999999;
 }
-.mariposa:nth-child(2) {
+
+
+.mariposa.numero2 {
   animation-delay: 0.4s;
 }
-.mariposa:nth-child(2) .mariposa-turn {
+.mariposa.numero2 .mariposa-turn {
   animation-delay: 0.75s;
 }
-.mariposa:nth-child(2) .mariposa-turn .mariposa-flutter {
+.mariposa.numero2 .mariposa-turn .mariposa-flutter {
   transform: scale(0.7) rotateX(65deg);
 }
-.mariposa:nth-child(3) {
+.mariposa.numero3 {
   animation-delay: 0.75s;
 }
-.mariposa:nth-child(3) .mariposa-turn {
+.mariposa.numero3 .mariposa-turn {
   animation-delay: 1.25s;
 }
-.mariposa:nth-child(3) .mariposa-turn .mariposa-flutter {
+.mariposa.numero3 .mariposa-turn .mariposa-flutter {
   transform: scale(0.3) rotateX(45deg);
 }
 .mariposa .mariposa-turn {
@@ -1789,8 +1791,8 @@ p {
   filter: drop-shadow(50px 30px 10px rgba(0, 0, 0, 0.5));
 }
 .mariposa-flutter {
-  width: 2rem;
-  height: 8rem;
+  width: 1rem;
+  height: 4rem;
   position: relative;
   top: 0;
   margin: 0 auto;
@@ -1803,6 +1805,13 @@ p {
   transform: rotateX(25deg) rotateY(5deg);
   filter: brightness(0) invert(1);
     -webkit-filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 750px) {
+  .mariposa-flutter {
+  width: 0.5rem;
+  height: 2rem;
+  }
 }
 .mariposa-flutter::before, .mariposa-flutter::after {
   position: absolute;
