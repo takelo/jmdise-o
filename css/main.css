@@ -417,7 +417,8 @@ div.sitio_web img:hover{
 
 div.sitio_web p{
   position: absolute;
-  bottom: 0;
+  bottom: -80;
+  opacity: 0;
   left: 0;
   padding: 15px 10px;
   margin: 0;
@@ -425,15 +426,16 @@ div.sitio_web p{
   width: 100%;
   text-align: left;
   font-family: 'Oswald', sans-serif;
-  color: #8ececd;
+  color: white;
   text-transform: uppercase;
   font-weight: 900;
   transition: all .5s ease-in-out;
 }
 /* cuando hago over en sitio_web afecto a p  */
 div.sitio_web:hover p{
-bottom: -80px;
-opacity: 0;
+/* bottom: -80px; */
+bottom: 0;
+opacity: 1;
 }
 /* section.portafolio{
   background: #424141;
@@ -1187,14 +1189,14 @@ canvas{
   position: relative;
   width: 100%;
   background: white;
-    height: 95vh;
+    height: 80vh;
   overflow: hidden;
   animation: bgchange 20s infinite;
 }
 
 @media only screen and (min-width:600px) {
   .boxes {
-    /* height: 64vh;; */
+    height: 50vh;;
   }
 }
 .text {
@@ -1205,7 +1207,7 @@ canvas{
   transform: translate(-50%, -50%);
   color: black;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 30px;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
@@ -1236,6 +1238,7 @@ canvas{
   position: absolute;
   bottom: -100px;
   background-color: black;
+  /* border : 2px solid black; */
   animation: boxes 10s infinite ease-in-out;
 }
 
@@ -1277,7 +1280,7 @@ canvas{
   width: 55px;
   height: 55px;
   left: 60%;
-  animation-delay: 4s;
+  animation-delay: 5s;
 }
 
 .square:nth-child(7) {
@@ -1291,7 +1294,7 @@ canvas{
   width: 70px;
   height: 70px;
   left: 75%;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .square:nth-child(9) {
@@ -1308,13 +1311,31 @@ canvas{
   animation-delay: 7s;
 }
 
-@keyframes boxes {
+/* @keyframes boxes {
   0% { bottom: -100px }
 
   100% { bottom: 100%;
-  transform: rotate(180deg);
+  transform: rotateZ(180deg) rotateY(180deg);
   opacity: 0; }
+} */
+@keyframes boxes {
+	0% { bottom: -100px ; background-color: #272727 }
+
+	20% { background-color: black }
+
+	40% { background-color: white }
+
+	60% { background-color: darkgreen }
+
+	80% { background-color: black }
+
+	100% { background-color: #272727 ; bottom: 100%;
+    transform: rotateZ(180deg) rotateY(180deg);
+    opacity: 0;}
 }
+
+
+
 
 
 /* lighting */
@@ -1808,8 +1829,12 @@ p {
 }
 
 @media screen and (max-width: 750px) {
+  .mariposa {
+    width: 50px;
+    height: 50px;
+  }
   .mariposa-flutter {
-  width: 0.5rem;
+  width: 0.25rem;
   height: 2rem;
   }
 }
