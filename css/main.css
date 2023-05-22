@@ -316,7 +316,7 @@ div.hamburger.open .hamburger-inner:before {
   font-size: 45px;
   color: #b34905;
 }
-.servicios .data .items .row .item:nth-child(odd){
+/* .servicios .data .items .row .item:nth-child(odd){
   animation: float 14s linear infinite;
 }
 .servicios .data .items .row .item:nth-child(even){
@@ -333,7 +333,7 @@ div.hamburger.open .hamburger-inner:before {
   animation: float 22s linear infinite;
   animation-direction: reverse;
   animation-delay: -5s;
-}
+} */
 section.servicios{
   text-align: center;
 }
