@@ -1220,7 +1220,7 @@ canvas{
 
 
 .text span:before {
-	content: 'DEVELOP';
+	content: 'develop';
 	text-transform: uppercase;
 	color: #1B1464;
 	animation: word-switch 5s infinite;
