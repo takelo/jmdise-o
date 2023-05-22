@@ -1189,14 +1189,14 @@ canvas{
   position: relative;
   width: 100%;
   background: white;
-    height: 80vh;
+    height: 50vh;
   overflow: hidden;
   animation: bgchange 20s infinite;
 }
 
 @media only screen and (min-width:600px) {
   .boxes {
-    height: 50vh;;
+    height: 80vh;;
   }
 }
 .text {
