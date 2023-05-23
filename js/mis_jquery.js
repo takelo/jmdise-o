@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-
+  console.log('apologies for this smelly code. If you hire me or we work together, I promise to apply clean code ^^');
   // menu movil
   $(".hamburger").click(function(){
     $(".hamburger").toggleClass('open');
