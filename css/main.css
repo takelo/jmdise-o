@@ -1453,7 +1453,11 @@ a.flotante {
 a.flotante img{
   width: 100px;
 }
-
+@media only screen and (max-width:960px) {
+  a.flotante img{
+    width: 70px;
+  }
+}
 .model-wrapper{
   display: none;
   position:fixed;
