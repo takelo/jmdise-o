@@ -226,6 +226,7 @@ div.hamburger.open .hamburger-inner:before {
 
 .servicios{
   position: relative;
+  overflow: hidden;
 }
 
 .servicios .contenedor-video video{
@@ -316,24 +317,33 @@ div.hamburger.open .hamburger-inner:before {
   font-size: 45px;
   color: #b34905;
 }
-/* .servicios .data .items .row .item:nth-child(odd){
-  animation: float 14s linear infinite;
+ .servicios .data .items .row .item:nth-child(3n-2){
+  animation: float 10s linear infinite;
 }
-.servicios .data .items .row .item:nth-child(even){
+.servicios .data .items .row .item:nth-child(3n-1){
   animation: float 20s linear infinite;
   animation-direction: reverse;
-  animation-delay: -5s;
+  animation-delay: -3s;
+}
+.servicios .data .items .row .item:nth-child(3n){
+  animation: float 10s linear infinite;
+  animation-direction: reverse;
+  animation-delay: -2s;
 }
 
-.servicios .data .items .row .item:nth-child(4) .row > div:nth-child(odd) i{
-  animation: float 22s linear infinite;
-  animation-delay: -10s;
+.servicios .data .items .row .item:nth-child(3n-2) .row > div:nth-child(3n-2) i{
+  animation: float 10s linear infinite;
 }
-.servicios .data .items .row .item:nth-child(4) .row > div:nth-child(even) i{
-  animation: float 22s linear infinite;
+.servicios .data .items .row .item:nth-child(3n-1) .row > div:nth-child(3n-1) i{
+  animation: float 11s linear infinite;
   animation-direction: reverse;
-  animation-delay: -5s;
-} */
+  animation-delay: -2s;
+} 
+.servicios .data .items .row .item:nth-child(3n) .row > div:nth-child(3n) i{
+  animation: float 13s linear infinite;
+  animation-direction: reverse;
+  animation-delay: -6s;
+} 
 section.servicios{
   text-align: center;
 }
