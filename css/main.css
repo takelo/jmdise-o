@@ -421,7 +421,7 @@ ul.lista-portfolio li{
 
 @media only screen and (min-width:768px) {
   ul.lista-portfolio li{
-    width: 33.3%;
+    width: 33%;
   }
 }
 
