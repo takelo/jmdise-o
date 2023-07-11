@@ -405,24 +405,11 @@ section.portfolio h2{
   text-align: center;
   font-family: "computer", serif;
 }
-ul.lista-portfolio{
-  list-style: none;
-  padding: 0;
-}
-ul.lista-portfolio li{
-  padding: 10px;
-  float: left;
-}
-@media only screen and (min-width:480px) {
-  ul.lista-portfolio li{
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width:768px) {
-  ul.lista-portfolio li{
-    width: 33%;
-  }
+.items-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  padding: 0 2rem;
 }
 
 div.sitio_web{
