@@ -411,6 +411,9 @@ section.portfolio h2{
   grid-gap: 3rem;
   padding: 0 2rem;
 }
+.items-grid a{
+ color: #000;
+}
 
 
 @media only screen and (max-width:958px) {
@@ -619,7 +622,7 @@ nav.navegacion-principal ul li span {
   position: absolute;
   width: 25%;
   height: 100%;
-  background-color: #ff6600;
+  background-color: #E74C3C;
   z-index: -1;
   left: 0;
   top: 0;
@@ -1215,11 +1218,11 @@ canvas{
 
 	20% { background-color: rgb(50, 50, 220) }
 
-	40% { background-color: tomato }
+	40% { background-color: #B22222 }
 
-	60% { background-color: lightblue }
+	60% { background-color: #ADD8E6 }
 
-	80% { background-color: darkgreen }
+	80% { background-color: #006400 }
 
 	100% { background-color: #272727 }
 }
@@ -1271,7 +1274,7 @@ canvas{
 
 	50% { content: 'develop' ; font-family: computer, serif; }
 
-	100% { content: 'deliver' ; font-family: 'Lobster', cursive;}
+	100% { content: 'deliver' ; font-family: 'Oswald', sans-serif;}
 }
 
 .square{
@@ -1730,8 +1733,8 @@ to{
 
 /* mariposas */
 html, body {
-  /* font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
+  font-family: sans-serif;
+  /* font-size: 18px;
   color: #000;
   margin: 0;
   padding: 0;
@@ -1988,6 +1991,7 @@ p {
   font-size: 30px;
   text-transform: uppercase;
   margin: 25px;
+  font-weight: 700;
 }
 
 .card-4 p {
@@ -1996,6 +2000,7 @@ p {
   font-size: 18px;
   transition: 0.5s;
   opacity: 0;
+  font-weight: 600;
 }
 
 .card-4 a {
@@ -2013,6 +2018,10 @@ p {
   height: 100%;
   width: 100%;
   left: 0%;
+  background-color: rgba(255, 255, 255, 0.405);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-4:hover p,
@@ -2038,5 +2047,5 @@ p {
 }
 
 .card-4:hover img {
-  opacity: 0;
+  /* opacity: 0; */
 }
