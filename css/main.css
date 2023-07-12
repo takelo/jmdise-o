@@ -1456,18 +1456,27 @@ ul.lighting li {
 /* boton flotante */
 
 a.flotante {
-  display: none;
+  /* display: none; */
   z-index:50;
   position:fixed;
   bottom:10vh;
-  left:5vw;
+  left:-100px;
+  transition: all 0.5s ease;
+}
+a.flotante.show {
+  left:-15px;
+  transform: rotate(55deg);
 }
 a.flotante img{
   width: 100px;
 }
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:576px) {
   a.flotante img{
     width: 70px;
+  }
+  a.flotante.show {
+    left:-10px;
+    transform: rotate(55deg);
   }
 }
 .model-wrapper{
@@ -1730,6 +1739,7 @@ html, body {
   background: #b5d4e3; */
 }
 body {
+  position: relative;
   /* position: relative;
   display: flex;
   flex-direction: column;
