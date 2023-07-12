@@ -41,9 +41,9 @@ $(document).ready(function() {
     $(".header").removeClass('fixed');
   }
    if(scroll > 2500){
-       $(".flotante").fadeIn(1000);
+       $(".flotante").addClass('show');
      }else{
-         $(".flotante").fadeOut(1000);
+         $(".flotante").removeClass('show');
      }
    if(scroll > 3500){
        $(".model-wrapper").fadeIn(1000);
