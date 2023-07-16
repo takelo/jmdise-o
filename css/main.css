@@ -403,7 +403,8 @@ section.portfolio{
 }
 section.portfolio h2{
   text-align: center;
-  font-family: "computer", serif;
+  /* font-family: "computer", serif; */
+  font-weight: 700;
 }
 .items-grid{
   display: grid;
